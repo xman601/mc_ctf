@@ -46,15 +46,13 @@ execute as @e[type=item] if items entity @s contents *[minecraft:custom_data~{CT
 
 
 # NOTE(alex): Pickup and teleport flags
-execute as @e[tag=CTF.IsFlag] if score @s CTF.PickupCooldown matches 1.. at @s run function ctf:internal/flag_update_cooldown
-execute as @e[tag=CTF.IsFlag] unless score @s CTF.ID matches 1.. unless score @s CTF.PickupCooldown matches 1.. at @s run function ctf:internal/flag_copy_closest_player_id
+execute as @e[tag=CTF.IsFlag] at @s run function ctf:internal/flag_update_cooldown
+execute as @e[tag=CTF.IsFlag] unless score @s CTF.ID matches 1.. at @s run function ctf:internal/flag_copy_closest_player_id
 execute as @a[tag=CTF.PlayingGame] at @s run function ctf:internal/player_tp_carried_flags
 
 
 # NOTE(alex): Update goals
 execute as @e[type=item] if items entity @s contents minecraft:barrier at @s if entity @e[tag=CTF.IsCounter,distance=..1] run function ctf:internal/kill_goal
-# TODO(alex): Get rid of this!!!
-# execute as @e[tag=CTF.IsCounter] store result score @s CTF.FlagCount at @s positioned ~-3 ~ ~-3 if entity @e[dx=7,dy=2,dz=7,tag=CTF.IsFlag]
 
 
 # NOTE(alex): Recolor sheep that are in a goal

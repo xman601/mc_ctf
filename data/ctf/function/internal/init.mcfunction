@@ -192,6 +192,24 @@ bossbar set ctf:green max 6
 bossbar set ctf:red max 6
 bossbar set ctf:black max 6
 
+# NOTE(alex): Each team has its own cooldown per flag
+scoreboard objectives add CTF.WhitePickupCooldown dummy
+scoreboard objectives add CTF.OrangePickupCooldown dummy
+scoreboard objectives add CTF.MagentaPickupCooldown dummy
+scoreboard objectives add CTF.LightBluePickupCooldown dummy
+scoreboard objectives add CTF.YellowPickupCooldown dummy
+scoreboard objectives add CTF.LimePickupCooldown dummy
+scoreboard objectives add CTF.PinkPickupCooldown dummy
+scoreboard objectives add CTF.GrayPickupCooldown dummy
+scoreboard objectives add CTF.LightGrayPickupCooldown dummy
+scoreboard objectives add CTF.CyanPickupCooldown dummy
+scoreboard objectives add CTF.PurplePickupCooldown dummy
+scoreboard objectives add CTF.BluePickupCooldown dummy
+scoreboard objectives add CTF.BrownPickupCooldown dummy
+scoreboard objectives add CTF.GreenPickupCooldown dummy
+scoreboard objectives add CTF.RedPickupCooldown dummy
+scoreboard objectives add CTF.BlackPickupCooldown dummy
+
 # NOTE(alex): This is a global scoreboard that can be used
 # for any temporary calculations.
 scoreboard objectives add CTF.Temp dummy
@@ -202,11 +220,6 @@ scoreboard objectives add CTF.ID dummy
 scoreboard players reset @a CTF.ID
 scoreboard players reset @e[tag=CTF.IsFlag] CTF.ID
 scoreboard players set #NextID CTF.ID 1
-
-scoreboard objectives add CTF.PickupCooldown dummy
-
-# NOTE(alex): This cooldown is in ticks, so at 20 TPS, this is a 10 second cooldown.
-scoreboard players set #CooldownAmount CTF.PickupCooldown 200
 
 # NOTE(alex): Triggers
 scoreboard objectives add CTF.DeathTrigger deathCount

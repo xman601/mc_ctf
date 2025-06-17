@@ -1,0 +1,14 @@
+# ========================================================================
+# $File: $
+# $Date: $
+# $Revision: $
+# $Creator: Alexander Overstreet $
+# $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
+# ========================================================================
+
+advancement revoke @s only ctf:eat_bread
+
+execute if items entity @s weapon.offhand bread[minecraft:custom_data~{CTF.NoDrop:true}] run tag @s add CTF.BreadIsOffhand
+
+tag @s add CTF.NeedsMoreBread
+schedule function ctf:internal/give_more_bread 1t replace

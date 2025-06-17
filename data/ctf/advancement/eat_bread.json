@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:bread",
+          "components": {
+            "minecraft:custom_data": {
+              "CTF.NoDrop": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ctf:trigger/eat_bread"
+  }
+}

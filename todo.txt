@@ -1,0 +1,17 @@
+TODO(alex):
+
+
+FUTURE IDEAS:
+Classes
+    Juggernaut
+    Thief
+
+MAP:
+Lobby
+set spawnpoint when you start a map
+
+
+
+NOTE(alex): These gamerules should be turned on... probably
+keepInventory true
+immediateRespawn true

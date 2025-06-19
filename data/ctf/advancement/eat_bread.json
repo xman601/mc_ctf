@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "ctf:trigger/eat_bread"
+    "function": "ctf:player/eat_bread"
   }
 }

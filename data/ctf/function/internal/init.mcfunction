@@ -144,7 +144,6 @@ scoreboard players set #NextID CTF.ID 1
 # NOTE(alex): Triggers
 scoreboard objectives add CTF.DeathTrigger deathCount
 scoreboard objectives add CTF.DamageTrigger minecraft.custom:minecraft.damage_taken
-scoreboard objectives add CTF.PlayerKills minecraft.custom:minecraft.player_kills
 
 function ctf:timer/timer_1s
 function ctf:timer/timer_10s

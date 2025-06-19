@@ -6,6 +6,6 @@
     }
   },
   "rewards": {
-    "function": "ctf:trigger/shot_crossbow"
+    "function": "ctf:player/shot_crossbow"
   }
 }

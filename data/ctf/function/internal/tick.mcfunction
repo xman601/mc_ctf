@@ -23,9 +23,6 @@ tag @a[team=CTF.Green] add CTF.PlayingGame
 tag @a[team=CTF.Red] add CTF.PlayingGame
 tag @a[team=CTF.Black] add CTF.PlayingGame
 
-# TODO(alex): Remove this as it is moving into ctf_world datapack!
-# execute as @a[tag=CTF.PlayingGame] run function ctf:api/equip_armor
-
 # NOTE(alex): Handle player death
 execute as @a[tag=CTF.PlayingGame] at @s if score @s CTF.DeathTrigger matches 1.. run function ctf:internal/player_drop_all_flags
 execute as @a[tag=CTF.PlayingGame] at @s if score @s CTF.DeathTrigger matches 1.. run function ctf:internal/refill_items_on_respawn
@@ -35,11 +32,6 @@ scoreboard players reset @a CTF.DeathTrigger
 # NOTE(alex): Handle player taking damage
 execute as @a[tag=CTF.PlayingGame] at @s if score @s CTF.DamageTrigger matches 1.. run function ctf:internal/player_drop_one_flag
 scoreboard players reset @a CTF.DamageTrigger
-
-
-# NOTE(alex): Handle player getting a kill
-execute as @a[tag=CTF.PlayingGame] if score @s CTF.PlayerKills matches 1.. run effect give @s minecraft:instant_health 1 3 true
-scoreboard players reset @a CTF.PlayerKills
 
 
 # NOTE(alex): Disallow dropping items

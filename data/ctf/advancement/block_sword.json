@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "ctf:trigger/block_sword"
+    "function": "ctf:player/block_sword"
   }
 }

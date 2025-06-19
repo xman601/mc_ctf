@@ -1,0 +1,10 @@
+# ========================================================================
+# $File: $
+# $Date: $
+# $Revision: $
+# $Creator: Alexander Overstreet $
+# $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
+# ========================================================================
+
+item replace entity @s hotbar.0 with trident[item_name='{"text":"Spear"}',enchantments={"minecraft:loyalty":3},unbreakable={},custom_data={CTF.NoDrop:true}] 1
+item replace entity @s hotbar.1 with trident[item_name='{"text":"Spear"}',enchantments={"minecraft:loyalty":3},unbreakable={},custom_data={CTF.NoDrop:true}] 1

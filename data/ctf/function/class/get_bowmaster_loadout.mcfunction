@@ -6,4 +6,6 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-function ctf:uuid/macro/load_data with entity @s
+# TODO(alex): tooltip_display={hidden_components:["minecraft:unbreakable"]}
+
+item replace entity @s hotbar.0 with bow[enchantments={"minecraft:multishot":2},intangible_projectile={},unbreakable={},custom_data={CTF.NoDrop:true}] 1

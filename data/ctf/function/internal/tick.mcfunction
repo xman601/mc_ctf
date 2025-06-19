@@ -23,7 +23,8 @@ tag @a[team=CTF.Green] add CTF.PlayingGame
 tag @a[team=CTF.Red] add CTF.PlayingGame
 tag @a[team=CTF.Black] add CTF.PlayingGame
 
-execute as @a[tag=CTF.PlayingGame] run function ctf:api/equip_armor
+# TODO(alex): Remove this as it is moving into ctf_world datapack!
+# execute as @a[tag=CTF.PlayingGame] run function ctf:api/equip_armor
 
 # NOTE(alex): Handle player death
 execute as @a[tag=CTF.PlayingGame] at @s if score @s CTF.DeathTrigger matches 1.. run function ctf:internal/player_drop_all_flags

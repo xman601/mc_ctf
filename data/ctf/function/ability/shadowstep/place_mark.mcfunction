@@ -6,7 +6,8 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-data modify storage ctf:temp Args.UUID set from entity @s UUID
-$data modify storage ctf:temp Args.Data set value "$(Data)"
+tag @s add CTF.ShadowStepMark
+scoreboard players operation @s CTF.ID = @p CTF.ID
 
-function ctf:uuid/macro/save_data with storage ctf:temp Args
+# NOTE(alex): Make sure the mark is facing the same direction as the player
+execute at @s rotated as @p run tp @s ~ ~ ~ ~ ~

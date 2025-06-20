@@ -6,6 +6,10 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-# TODO(alex): tooltip_display={hidden_components:["minecraft:unbreakable"]}
+effect give @e[tag=CTF.IsFlag,distance=..30] glowing 10 0 true
+effect give @a[distance=..30] glowing 10 0 true
 
-item replace entity @s hotbar.0 with bow[enchantments={"minecraft:multishot":2},intangible_projectile={},unbreakable={},custom_data={CTF.NoDrop:true}] 1
+particle sonic_boom ~ ~0.5 ~ 0 0 0 0 1 force
+playsound minecraft:entity.warden.attack_impact master @a ~ ~ ~ 0.5 1.2
+
+kill @s

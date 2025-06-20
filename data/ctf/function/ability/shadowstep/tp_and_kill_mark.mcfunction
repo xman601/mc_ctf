@@ -6,7 +6,10 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-team join CTF.Lobby_Red
-function ctf:player/equip_colored_armor {TeamColorHex:11546150}
-playsound minecraft:block.note_block.bass player @s
-tellraw @s [{"text":"You joined the ","color":"white"},{"text":"Red ","color":"red"},{"text":"team","color":"white"}]
+playsound minecraft:entity.enderman.teleport master @a ~ ~ ~
+
+tp @p @s
+execute at @p run playsound minecraft:entity.enderman.teleport master @a ~ ~ ~
+execute at @p run particle minecraft:dragon_breath ~ ~0.5 ~ 0.5 0.5 0.5 0.1 50 force
+
+kill @s

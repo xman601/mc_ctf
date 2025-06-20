@@ -6,7 +6,4 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-team join CTF.Lobby_Orange
-function ctf:player/equip_colored_armor {TeamColorHex:16351261}
-playsound minecraft:block.note_block.bass player @s
-tellraw @s [{"text":"You joined the ","color":"white"},{"text":"Orange ","color":"gold"},{"text":"team","color":"white"}]
+item replace entity @s hotbar.0 with compass[item_model="blaze_rod",item_name='{"text":"Fireball"}',rarity="rare",consumable={consume_seconds:1000000000,animation:"spear"},use_cooldown={seconds:1},max_stack_size=1,custom_data={CTF.NoDrop:true,CTF.Fireball:true}] 1

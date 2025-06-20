@@ -6,7 +6,6 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-data modify storage ctf:temp Args.UUID set from entity @s UUID
-$data modify storage ctf:temp Args.Data set value "$(Data)"
+advancement revoke @s only ctf:use_fireball
 
-function ctf:uuid/macro/save_data with storage ctf:temp Args
+execute positioned ^ ^1 ^2 if block ~ ~ ~ air summon fireball run function ctf:ability/fireball/launch

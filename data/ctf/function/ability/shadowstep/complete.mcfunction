@@ -6,7 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$team join CTF.Lobby_$(Team)
-$function ctf:player/equip_colored_armor {TeamColorHex:$(TeamColorHex)}
-$playsound minecraft:block.note_block.bass player @s
-$tellraw @s [{"text":"You joined the ","color":"white"},{"text":"$(Team) ","color":"$(TextColor)"},{"text":"team","color":"white"}]
+scoreboard players remove #NextID CTF.ShadowStepper 1
+scoreboard players reset @s CTF.ShadowStepper
+
+execute at @s as @e[type=marker,tag=CTF.ShadowStepMark] if score @s CTF.ID = @p CTF.ID run return run function ctf:ability/shadowstep/tp_and_kill_mark

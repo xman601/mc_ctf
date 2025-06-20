@@ -6,11 +6,6 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-team leave @s
-
-item replace entity @s armor.head with air
-item replace entity @s armor.chest with air
-item replace entity @s armor.legs with air
-item replace entity @s armor.feet with air
-
-$tp @s $(x) $(y) $(z) $(w) 0
+particle witch ^ ^ ^4 0 0 0 0 1
+tp @s ~ ~ ~ ~11.25 ~
+execute unless entity @s[y_rotation=0..10.25] at @s run function ctf:ability/protection_wand/particle_ring

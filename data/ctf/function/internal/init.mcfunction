@@ -141,6 +141,11 @@ scoreboard players reset @a CTF.ID
 scoreboard players reset @e[tag=CTF.IsFlag] CTF.ID
 scoreboard players set #NextID CTF.ID 1
 
+# NOTE(alex): This is only needed because scheduled functions
+# are always run as the server instead of as the original entity
+# who ran the function.
+scoreboard objectives add CTF.ShadowStepper dummy
+
 # NOTE(alex): Triggers
 scoreboard objectives add CTF.DeathTrigger deathCount
 scoreboard objectives add CTF.DamageTrigger minecraft.custom:minecraft.damage_taken

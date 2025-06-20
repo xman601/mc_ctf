@@ -7,4 +7,5 @@
 # ========================================================================
 
 advancement revoke @s only ctf:block_sword
+
 function ctf:internal/player_drop_all_flags

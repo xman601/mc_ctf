@@ -6,7 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$summon sheep ~ ~ ~ {PersistenceRequired:1b, Invulnerable:1b, NoAI:0b, DeathLootTable:"minecraft:empty", Color:$(TeamIndex), Tags:["CTF.IsFlag"], Team:"CTF.NoHitBoxes"}
+$summon sheep ~ ~ ~ {PersistenceRequired:1b, Invulnerable:1b, NoAI:0b, DeathLootTable:"minecraft:empty", Color:$(Color), Tags:["CTF.IsFlag"], Team:"CTF.NoHitBoxes"}
 
 scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.WhitePickupCooldown 60
 scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.OrangePickupCooldown 60

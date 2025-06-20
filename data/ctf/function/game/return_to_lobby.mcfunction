@@ -6,7 +6,11 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-data modify storage ctf:temp Args.UUID set from entity @s UUID
-$data modify storage ctf:temp Args.Data set value "$(Data)"
+team leave @s
 
-function ctf:uuid/macro/save_data with storage ctf:temp Args
+item replace entity @s armor.head with air
+item replace entity @s armor.chest with air
+item replace entity @s armor.legs with air
+item replace entity @s armor.feet with air
+
+function ctf:game/set_player_spawnpoint_and_tp with storage ctf:world LobbyPos

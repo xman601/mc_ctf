@@ -6,6 +6,11 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
+# NOTE(alex): Mana regeneration
+execute as @a unless score @s CTF.Mana matches 300.. run scoreboard players add @s CTF.Mana 1
+execute as @a if score @s CTF.FireballCooldown matches 1.. run scoreboard players remove @s CTF.FireballCooldown 1
+
+
 tag @a[team=CTF.White] add CTF.PlayingGame
 tag @a[team=CTF.Orange] add CTF.PlayingGame
 tag @a[team=CTF.Magenta] add CTF.PlayingGame

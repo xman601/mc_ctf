@@ -145,6 +145,8 @@ scoreboard players set #NextID CTF.ID 1
 # are always run as the server instead of as the original entity
 # who ran the function.
 scoreboard objectives add CTF.ShadowStepper dummy
+scoreboard objectives add CTF.FireballCooldown dummy
+scoreboard objectives add CTF.Mana dummy
 
 # NOTE(alex): Triggers
 scoreboard objectives add CTF.DeathTrigger deathCount

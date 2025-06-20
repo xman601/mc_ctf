@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "player",
+            "slots": {
+              "weapon.mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "CTF.LevitationWand": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ctf:ability/levitation_wand/hit_other_player"
+  }
+}

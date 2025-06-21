@@ -6,5 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$execute store result score .item_count CTF.Temp if items entity @s container.* $(ItemName)
-$execute unless score .item_count CTF.Temp matches $(ItemMax).. run function ctf:macro/get_non_droppable_item {ItemName:$(ItemName), ItemCount:1}
+# NOTE(alex): This assigns a globally unique ID to the entity
+
+scoreboard players add .next_id CTF.ID 1
+scoreboard players operation @s CTF.ID = .next_id CTF.ID

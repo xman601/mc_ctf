@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "ctf:ability/levitation_wand/passive_use"
+    "function": "ctf:ability/levitation_wand/activate"
   }
 }

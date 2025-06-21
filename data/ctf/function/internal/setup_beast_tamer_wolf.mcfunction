@@ -6,7 +6,11 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-# NOTE(alex): This assigns a globally unique ID to the entity
+tag @s add CTF.BeastTamerWolf
 
-scoreboard players operation @s CTF.ID = #NextID CTF.ID
-scoreboard players add #NextID CTF.ID 1
+$data merge entity @s $(Data)
+data modify entity @s Owner set from entity @p UUID
+
+$item replace entity @s armor.body with wolf_armor[dyed_color=$(ArmorColor)] 1
+
+scoreboard players operation @s CTF.ID = @p CTF.ID

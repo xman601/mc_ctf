@@ -6,9 +6,9 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-item replace entity @s hotbar.0 with compass[item_model="blaze_rod",item_name='{text:"Wand of Fire"}',rarity="rare",enchantment_glint_override=true,consumable={consume_seconds:1000000000,animation:"spear"},max_stack_size=1,custom_data={CTF.NoDrop:true,CTF.Fireball:true}] 1
-item replace entity @s hotbar.1 with breeze_rod[item_name='{text:"Wand of Levitation"}',rarity="rare",enchantment_glint_override=true,consumable={consume_seconds:1000000000,animation:"spear"},max_stack_size=1,custom_data={CTF.NoDrop:true,CTF.LevitationWand:true}] 1
-item replace entity @s hotbar.2 with enchanted_book[item_name='{text:"Tome of Enhancement"}',max_stack_size=3,consumable={consume_seconds:0,animation:"eat",has_consume_particles:false,sound:"minecraft:entity.evoker.cast_spell"},use_cooldown={seconds:5},custom_data={CTF.NoDrop:true,CTF.EnhancementTome:true}] 3
-item replace entity @s hotbar.3 with enchanted_book[item_name='{text:"Tome of Diminishment",color:"red"}',max_stack_size=3,consumable={consume_seconds:0,animation:"eat",has_consume_particles:false,sound:"minecraft:entity.evoker.cast_spell"},use_cooldown={seconds:5},custom_data={CTF.NoDrop:true,CTF.DiminishmentTome:true}] 3
+item replace entity @s hotbar.0 with compass[item_model="blaze_rod",item_name='{"text":"Wand of Fire"}',rarity="rare",enchantment_glint_override=true,consumable={consume_seconds:1000000000,animation:"spear"},max_stack_size=1,custom_data={CTF.NoDrop:true,CTF.Fireball:true}] 1
+item replace entity @s hotbar.1 with breeze_rod[item_name='{"text":"Wand of Levitation"}',rarity="rare",enchantment_glint_override=true,consumable={consume_seconds:1000000000,animation:"spear"},max_stack_size=1,custom_data={CTF.NoDrop:true,CTF.LevitationWand:true}] 1
+item replace entity @s hotbar.2 with enchanted_book[item_name='{"text":"Tome of Enhancement"}',max_stack_size=3,consumable={consume_seconds:0,animation:"eat",has_consume_particles:false,sound:"minecraft:entity.evoker.cast_spell"},use_cooldown={seconds:5},custom_data={CTF.NoDrop:true,CTF.EnhancementTome:true}] 3
+item replace entity @s hotbar.3 with enchanted_book[item_name='{"text":"Tome of Diminishment",color:"red"}',max_stack_size=3,consumable={consume_seconds:0,animation:"eat",has_consume_particles:false,sound:"minecraft:entity.evoker.cast_spell"},use_cooldown={seconds:5},custom_data={CTF.NoDrop:true,CTF.DiminishmentTome:true}] 3
 
 scoreboard players set @s CTF.Mana 300

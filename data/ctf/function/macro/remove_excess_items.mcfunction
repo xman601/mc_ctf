@@ -11,9 +11,9 @@
 # so the system cannot detect it, or by picking up arrows off of the
 # ground.
 
-$execute store result score #Current CTF.Temp if items entity @s container.* $(ItemName)
-$scoreboard players remove #Current CTF.Temp $(ItemMax)
+$execute store result score .current CTF.Temp if items entity @s container.* $(ItemName)
+$scoreboard players remove .current CTF.Temp $(ItemMax)
 
 $data modify storage ctf:temp Args.ItemName set value $(ItemName)
-execute store result storage ctf:temp Args.ItemCount int 1 run scoreboard players get #Current CTF.Temp
-execute if score #Current CTF.Temp matches 1.. run function ctf:macro/clear_item with storage ctf:temp Args
+execute store result storage ctf:temp Args.ItemCount int 1 run scoreboard players get .current CTF.Temp
+execute if score .current CTF.Temp matches 1.. run function ctf:macro/clear_item with storage ctf:temp Args

@@ -6,5 +6,8 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$execute store result score .item_count CTF.Temp if items entity @s container.* $(ItemName)
-$execute unless score .item_count CTF.Temp matches $(ItemMax).. run function ctf:macro/get_non_droppable_item {ItemName:$(ItemName), ItemCount:1}
+effect give @s levitation 1 10 true
+particle minecraft:cloud ~ ~ ~ 0.1 0.1 0.1 0.05 50 force
+
+advancement revoke @s only ctf:levitation_cooldown
+scoreboard players set @s CTF.LevitationCooldown 60

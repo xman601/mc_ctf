@@ -6,5 +6,9 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$execute store result score .item_count CTF.Temp if items entity @s container.* $(ItemName)
-$execute unless score .item_count CTF.Temp matches $(ItemMax).. run function ctf:macro/get_non_droppable_item {ItemName:$(ItemName), ItemCount:1}
+# NOTE(alex): This function doesn't "summon" in wolf in the Minecraft
+# sense, but in the "Requesting your presence, sire!" sense.
+
+data merge entity @s {Sitting:1b}
+
+tp @s ~ ~ ~

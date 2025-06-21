@@ -43,6 +43,76 @@ team modify CTF.Green color dark_green
 team modify CTF.Red color red
 team modify CTF.Black color black
 
+# NOTE(alex): These teams are for players who select a team
+# in the lobby, but are not actually in the game!
+team add CTF.Lobby_White "White"
+team add CTF.Lobby_Orange "Orange"
+team add CTF.Lobby_Magenta "Magenta"
+team add CTF.Lobby_LightBlue "Light Blue"
+team add CTF.Lobby_Yellow "Yellow"
+team add CTF.Lobby_Lime "Lime"
+team add CTF.Lobby_Pink "Pink"
+team add CTF.Lobby_Gray "Gray"
+team add CTF.Lobby_LightGray "Light Gray"
+team add CTF.Lobby_Cyan "Cyan"
+team add CTF.Lobby_Purple "Purple"
+team add CTF.Lobby_Blue "Blue"
+team add CTF.Lobby_Brown "Brown"
+team add CTF.Lobby_Green "Green"
+team add CTF.Lobby_Red "Red"
+team add CTF.Lobby_Black "Black"
+
+team modify CTF.Lobby_White color white
+team modify CTF.Lobby_Orange color gold
+team modify CTF.Lobby_Magenta color light_purple
+team modify CTF.Lobby_LightBlue color aqua
+team modify CTF.Lobby_Yellow color yellow
+team modify CTF.Lobby_Lime color green
+team modify CTF.Lobby_Pink color light_purple
+team modify CTF.Lobby_Gray color dark_gray
+team modify CTF.Lobby_LightGray color gray
+team modify CTF.Lobby_Cyan color dark_aqua
+team modify CTF.Lobby_Purple color dark_purple
+team modify CTF.Lobby_Blue color blue
+team modify CTF.Lobby_Brown color dark_red
+team modify CTF.Lobby_Green color dark_green
+team modify CTF.Lobby_Red color red
+team modify CTF.Lobby_Black color black
+
+team modify CTF.Lobby_White deathMessageVisibility never
+team modify CTF.Lobby_Orange deathMessageVisibility never
+team modify CTF.Lobby_Magenta deathMessageVisibility never
+team modify CTF.Lobby_LightBlue deathMessageVisibility never
+team modify CTF.Lobby_Yellow deathMessageVisibility never
+team modify CTF.Lobby_Lime deathMessageVisibility never
+team modify CTF.Lobby_Pink deathMessageVisibility never
+team modify CTF.Lobby_Gray deathMessageVisibility never
+team modify CTF.Lobby_LightGray deathMessageVisibility never
+team modify CTF.Lobby_Cyan deathMessageVisibility never
+team modify CTF.Lobby_Purple deathMessageVisibility never
+team modify CTF.Lobby_Blue deathMessageVisibility never
+team modify CTF.Lobby_Brown deathMessageVisibility never
+team modify CTF.Lobby_Green deathMessageVisibility never
+team modify CTF.Lobby_Red deathMessageVisibility never
+team modify CTF.Lobby_Black deathMessageVisibility never
+
+team modify CTF.Lobby_White collisionRule never
+team modify CTF.Lobby_Orange collisionRule never
+team modify CTF.Lobby_Magenta collisionRule never
+team modify CTF.Lobby_LightBlue collisionRule never
+team modify CTF.Lobby_Yellow collisionRule never
+team modify CTF.Lobby_Lime collisionRule never
+team modify CTF.Lobby_Pink collisionRule never
+team modify CTF.Lobby_Gray collisionRule never
+team modify CTF.Lobby_LightGray collisionRule never
+team modify CTF.Lobby_Cyan collisionRule never
+team modify CTF.Lobby_Purple collisionRule never
+team modify CTF.Lobby_Blue collisionRule never
+team modify CTF.Lobby_Brown collisionRule never
+team modify CTF.Lobby_Green collisionRule never
+team modify CTF.Lobby_Red collisionRule never
+team modify CTF.Lobby_Black collisionRule never
+
 # NOTE(alex): Set up the bossbars which serve as the scoreboard
 bossbar add ctf:white [{"text":"Captured Flags - ","color":"white"},{"text":"White","color":"white"}]
 bossbar add ctf:orange [{"text":"Captured Flags - ","color":"white"},{"text":"Orange","color":"gold"}]
@@ -115,6 +185,7 @@ bossbar set ctf:black max 6
 # NOTE(alex): Each team has its own cooldown per flag
 scoreboard objectives add CTF.WhitePickupCooldown dummy
 scoreboard objectives add CTF.OrangePickupCooldown dummy
+scoreboard objectives add CTF.OrangePickupCooldown dummy
 scoreboard objectives add CTF.MagentaPickupCooldown dummy
 scoreboard objectives add CTF.LightBluePickupCooldown dummy
 scoreboard objectives add CTF.YellowPickupCooldown dummy
@@ -133,20 +204,15 @@ scoreboard objectives add CTF.BlackPickupCooldown dummy
 # NOTE(alex): This is a global scoreboard that can be used
 # for any temporary calculations.
 scoreboard objectives add CTF.Temp dummy
-
-# NOTE(alex): We use a system of global ids
-# TODO(alex): I would much prefer to use UUIDs if possible!!!
 scoreboard objectives add CTF.ID dummy
-scoreboard players reset @a CTF.ID
-scoreboard players reset @e[tag=CTF.IsFlag] CTF.ID
-scoreboard players set #NextID CTF.ID 1
 
 # NOTE(alex): This is only needed because scheduled functions
 # are always run as the server instead of as the original entity
 # who ran the function.
 scoreboard objectives add CTF.ShadowStepper dummy
 scoreboard objectives add CTF.FireballCooldown dummy
-scoreboard objectives add CTF.Mana dummy
+scoreboard objectives add CTF.LevitationCooldown dummy
+scoreboard objectives add CTF.BeastTamerHornCooldown dummy
 
 # NOTE(alex): Triggers
 scoreboard objectives add CTF.DeathTrigger deathCount

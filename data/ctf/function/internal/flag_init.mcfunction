@@ -6,7 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$data merge entity @s {PersistenceRequired:1b, Invulnerable:1b, DeathLootTable:"minecraft:empty", Color:$(Color)}
+$data merge entity @s {PersistenceRequired:1b, Invulnerable:1b, DeathLootTable:"minecraft:empty", Color:$(Color), attributes:[{id:"minecraft:tempt_range",base:100}]}
 
 tag @s add CTF.IsFlag
 team join CTF.NoHitBoxes @s

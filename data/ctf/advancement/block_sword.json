@@ -1,19 +1,19 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:using_item",
-      "conditions": {
-        "item": {
-          "predicates": {
-            "minecraft:custom_data": {
-              "CTF.BlockSword": true
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "CTF.BlockSword": true
+                        }
+                    }
+                }
             }
-          }
         }
-      }
+    },
+    "rewards": {
+        "function": "ctf:player/block_sword"
     }
-  },
-  "rewards": {
-    "function": "ctf:player/block_sword"
-  }
 }

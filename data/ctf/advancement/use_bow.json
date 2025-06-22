@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": "this",
+                            "score": "bow.use"
+                        },
+                        "range": {
+                            "min": 1
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "ctf:ability/arrow_regen/use_bow"
+    }
+}

@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "ctf:ability/fire_powder/activate"
+    "function": "ctf:ability/fire_powder/use"
   }
 }

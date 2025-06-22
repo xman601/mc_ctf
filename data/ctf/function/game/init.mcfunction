@@ -210,11 +210,6 @@ scoreboard objectives add CTF.ID dummy
 scoreboard objectives add CTF.LevitationCooldown dummy
 scoreboard objectives add CTF.BeastTamerHornCooldown dummy
 
-# NOTE(alex): This is only needed because scheduled functions
-# are always run as the server instead of as the original entity
-# who ran the function.
-scoreboard objectives add CTF.ShadowStepper dummy
-
 # NOTE(alex): Item cooldowns
 scoreboard objectives add arrow_regen.cooldown dummy
 scoreboard objectives add arrow_regen.count dummy
@@ -227,6 +222,11 @@ scoreboard objectives add enhancement_tome.cooldown dummy
 scoreboard objectives add enhancement_tome.count dummy
 scoreboard objectives add diminishment_tome.cooldown dummy
 scoreboard objectives add diminishment_tome.count dummy
+scoreboard objectives add shadowstep.cooldown dummy
+scoreboard objectives add shadowstep.count dummy
+scoreboard objectives add shadowstep.active_time dummy
+scoreboard objectives add hunters_eye.cooldown dummy
+scoreboard objectives add hunters_eye.count dummy
 
 # NOTE(alex): Triggers
 scoreboard objectives add CTF.DeathTrigger deathCount

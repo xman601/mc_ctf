@@ -6,7 +6,7 @@
         "item": {
           "predicates": {
             "minecraft:custom_data": {
-              "CTF.Shadowstep": true
+              "CTF.HuntersEye": true
             }
           }
         }
@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "ctf:ability/shadowstep/use"
+    "function": "ctf:ability/hunters_eye/use"
   }
 }

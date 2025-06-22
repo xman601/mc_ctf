@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:shot_crossbow"
+        }
+    },
+    "rewards": {
+        "function": "ctf:ability/arrow_regen/use_crossbow"
+    }
+}

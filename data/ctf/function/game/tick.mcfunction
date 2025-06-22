@@ -51,10 +51,6 @@ execute as @a[tag=CTF.PlayingGame] at @s run function ctf:internal/player_tp_car
 execute as @e[type=item] if items entity @s contents minecraft:barrier at @s if entity @e[tag=CTF.IsCounter,distance=..1] run function ctf:internal/kill_goal
 
 
-# NOTE(alex): Handle tracker arrows
-execute as @e[type=minecraft:spectral_arrow,nbt={inGround:1b}] at @s run function ctf:ability/tracker_arrow/land
-
-
 # NOTE(alex): Recolor sheep that are in a goal
 execute at @e[tag=CTF.IsCounter,tag=CTF.White] positioned ~-3 ~ ~-3 as @e[dx=7,dy=2,dz=7,type=sheep,tag=CTF.IsFlag] run data merge entity @s {Color:0b}
 execute at @e[tag=CTF.IsCounter,tag=CTF.Orange] positioned ~-3 ~ ~-3 as @e[dx=7,dy=2,dz=7,type=sheep,tag=CTF.IsFlag] run data merge entity @s {Color:1b}

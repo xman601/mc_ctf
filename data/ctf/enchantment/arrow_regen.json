@@ -1,6 +1,10 @@
 {
     "description": "Arrow Regeneration",
-    "supported_items": "minecraft:bow",
+    "exclusive_set": "minecraft:infinity",
+    "supported_items": [
+        "minecraft:bow",
+        "minecraft:crossbow"
+    ],
     "weight": 1,
     "max_level": 1,
     "min_cost": {

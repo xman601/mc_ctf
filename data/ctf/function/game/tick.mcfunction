@@ -45,6 +45,9 @@ execute as @a[tag=CTF.PlayingGame] at @s run function ctf:internal/player_tp_car
 
 
 # NOTE(alex): Update goals
+# TODO(alex): Probably remove this because I don't think it's used!
+# We can just do something like /kill @e[tag=CTF.IsCounter,sort=nearest,limit=1]
+# or even wrap this under an api function for convenience
 execute as @e[type=item] if items entity @s contents minecraft:barrier at @s if entity @e[tag=CTF.IsCounter,distance=..1] run function ctf:internal/kill_goal
 
 
@@ -88,10 +91,6 @@ execute store result bossbar ctf:brown value if entity @e[tag=CTF.IsFlag,nbt={Co
 execute store result bossbar ctf:green value if entity @e[tag=CTF.IsFlag,nbt={Color:13b}]
 execute store result bossbar ctf:red value if entity @e[tag=CTF.IsFlag,nbt={Color:14b}]
 execute store result bossbar ctf:black value if entity @e[tag=CTF.IsFlag,nbt={Color:15b}]
-
-
-# NOTE(alex): Remove any duplicate items the player may have received
-execute as @a[tag=CTF.PlayingGame] run function ctf:internal/remove_excess_items
 
 
 # NOTE(alex): Cleanup

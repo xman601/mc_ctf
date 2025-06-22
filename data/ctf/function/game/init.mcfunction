@@ -207,7 +207,6 @@ scoreboard objectives add CTF.Temp dummy
 scoreboard objectives add CTF.ID dummy
 
 # NOTE(alex): Ability cooldowns
-scoreboard objectives add CTF.FireballCooldown dummy
 scoreboard objectives add CTF.LevitationCooldown dummy
 scoreboard objectives add CTF.BeastTamerHornCooldown dummy
 
@@ -219,6 +218,15 @@ scoreboard objectives add CTF.ShadowStepper dummy
 # NOTE(alex): Item cooldowns
 scoreboard objectives add arrow_regen.cooldown dummy
 scoreboard objectives add arrow_regen.count dummy
+scoreboard objectives add wind_charge.cooldown dummy
+scoreboard objectives add wind_charge.count dummy
+scoreboard objectives add wind_charge.use minecraft.used:minecraft.wind_charge
+scoreboard objectives add fire_powder.cooldown dummy
+scoreboard objectives add fire_powder.count dummy
+scoreboard objectives add enhancement_tome.cooldown dummy
+scoreboard objectives add enhancement_tome.count dummy
+scoreboard objectives add diminishment_tome.cooldown dummy
+scoreboard objectives add diminishment_tome.count dummy
 
 # NOTE(alex): Triggers
 scoreboard objectives add CTF.DeathTrigger deathCount

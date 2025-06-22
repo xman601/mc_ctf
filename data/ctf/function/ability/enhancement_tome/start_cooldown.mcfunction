@@ -6,8 +6,5 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-advancement revoke @s only ctf:left_click
-
-tag @s add CTF.LeftClicked
-execute as @e[type=interaction,distance=..6] if function ctf:interaction/find_attacker run function ctf:interaction/handle_left_click
-tag @s remove CTF.LeftClicked
+advancement revoke @s only ctf:enhancement_tome_cooldown
+scoreboard players set @s enhancement_tome.cooldown 600

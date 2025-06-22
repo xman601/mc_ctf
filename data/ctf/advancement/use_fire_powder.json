@@ -1,7 +1,7 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:using_item",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "predicates": {
@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "ctf:ability/fireball/activate"
+    "function": "ctf:ability/fire_powder/activate"
   }
 }

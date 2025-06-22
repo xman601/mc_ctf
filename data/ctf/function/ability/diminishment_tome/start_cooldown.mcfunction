@@ -6,7 +6,5 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-execute on origin run scoreboard players add @s arrow_regen.count 1
-execute on origin unless score @s arrow_regen.cooldown matches 1.. run function ctf:ability/arrow_regen/start_cooldown
-
-data merge entity @s {pickup:0b}
+advancement revoke @s only ctf:diminishment_tome_cooldown
+scoreboard players set @s diminishment_tome.cooldown 600

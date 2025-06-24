@@ -6,112 +6,112 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-team add CTF.NoHitBoxes
-team modify CTF.NoHitBoxes collisionRule never
+team add no_hitbox
+team modify no_hitbox collisionRule never
 
-team add CTF.White "White"
-team add CTF.Orange "Orange"
-team add CTF.Magenta "Magenta"
-team add CTF.LightBlue "Light Blue"
-team add CTF.Yellow "Yellow"
-team add CTF.Lime "Lime"
-team add CTF.Pink "Pink"
-team add CTF.Gray "Gray"
-team add CTF.LightGray "Light Gray"
-team add CTF.Cyan "Cyan"
-team add CTF.Purple "Purple"
-team add CTF.Blue "Blue"
-team add CTF.Brown "Brown"
-team add CTF.Green "Green"
-team add CTF.Red "Red"
-team add CTF.Black "Black"
+team add white "White"
+team add orange "Orange"
+team add magenta "Magenta"
+team add lightblue "Light Blue"
+team add yellow "Yellow"
+team add lime "Lime"
+team add pink "Pink"
+team add gray "Gray"
+team add light_gray "Light Gray"
+team add cyan "Cyan"
+team add purple "Purple"
+team add blue "Blue"
+team add brown "Brown"
+team add green "Green"
+team add red "Red"
+team add black "Black"
 
-team modify CTF.White color white
-team modify CTF.Orange color gold
-team modify CTF.Magenta color light_purple
-team modify CTF.LightBlue color aqua
-team modify CTF.Yellow color yellow
-team modify CTF.Lime color green
-team modify CTF.Pink color light_purple
-team modify CTF.Gray color dark_gray
-team modify CTF.LightGray color gray
-team modify CTF.Cyan color dark_aqua
-team modify CTF.Purple color dark_purple
-team modify CTF.Blue color blue
-team modify CTF.Brown color dark_red
-team modify CTF.Green color dark_green
-team modify CTF.Red color red
-team modify CTF.Black color black
+team modify white color white
+team modify orange color gold
+team modify magenta color light_purple
+team modify light_blue color aqua
+team modify yellow color yellow
+team modify lime color green
+team modify pink color light_purple
+team modify gray color dark_gray
+team modify light_gray color gray
+team modify cyan color dark_aqua
+team modify purple color dark_purple
+team modify blue color blue
+team modify brown color dark_red
+team modify green color dark_green
+team modify red color red
+team modify black color black
 
 # NOTE(alex): These teams are for players who select a team
 # in the lobby, but are not actually in the game!
-team add CTF.Lobby_White "White"
-team add CTF.Lobby_Orange "Orange"
-team add CTF.Lobby_Magenta "Magenta"
-team add CTF.Lobby_LightBlue "Light Blue"
-team add CTF.Lobby_Yellow "Yellow"
-team add CTF.Lobby_Lime "Lime"
-team add CTF.Lobby_Pink "Pink"
-team add CTF.Lobby_Gray "Gray"
-team add CTF.Lobby_LightGray "Light Gray"
-team add CTF.Lobby_Cyan "Cyan"
-team add CTF.Lobby_Purple "Purple"
-team add CTF.Lobby_Blue "Blue"
-team add CTF.Lobby_Brown "Brown"
-team add CTF.Lobby_Green "Green"
-team add CTF.Lobby_Red "Red"
-team add CTF.Lobby_Black "Black"
+team add lobby.white "White"
+team add lobby.orange "Orange"
+team add lobby.magenta "Magenta"
+team add lobby.light_blue "Light Blue"
+team add lobby.yellow "Yellow"
+team add lobby.lime "Lime"
+team add lobby.pink "Pink"
+team add lobby.gray "Gray"
+team add lobby.light_gray "Light Gray"
+team add lobby.cyan "Cyan"
+team add lobby.purple "Purple"
+team add lobby.blue "Blue"
+team add lobby.brown "Brown"
+team add lobby.green "Green"
+team add lobby.red "Red"
+team add lobby.black "Black"
 
-team modify CTF.Lobby_White color white
-team modify CTF.Lobby_Orange color gold
-team modify CTF.Lobby_Magenta color light_purple
-team modify CTF.Lobby_LightBlue color aqua
-team modify CTF.Lobby_Yellow color yellow
-team modify CTF.Lobby_Lime color green
-team modify CTF.Lobby_Pink color light_purple
-team modify CTF.Lobby_Gray color dark_gray
-team modify CTF.Lobby_LightGray color gray
-team modify CTF.Lobby_Cyan color dark_aqua
-team modify CTF.Lobby_Purple color dark_purple
-team modify CTF.Lobby_Blue color blue
-team modify CTF.Lobby_Brown color dark_red
-team modify CTF.Lobby_Green color dark_green
-team modify CTF.Lobby_Red color red
-team modify CTF.Lobby_Black color black
+team modify lobby.white color white
+team modify lobby.orange color gold
+team modify lobby.magenta color light_purple
+team modify lobby.light_blue color aqua
+team modify lobby.yellow color yellow
+team modify lobby.lime color green
+team modify lobby.pink color light_purple
+team modify lobby.gray color dark_gray
+team modify lobby.light_gray color gray
+team modify lobby.cyan color dark_aqua
+team modify lobby.purple color dark_purple
+team modify lobby.blue color blue
+team modify lobby.brown color dark_red
+team modify lobby.green color dark_green
+team modify lobby.red color red
+team modify lobby.black color black
 
-team modify CTF.Lobby_White deathMessageVisibility never
-team modify CTF.Lobby_Orange deathMessageVisibility never
-team modify CTF.Lobby_Magenta deathMessageVisibility never
-team modify CTF.Lobby_LightBlue deathMessageVisibility never
-team modify CTF.Lobby_Yellow deathMessageVisibility never
-team modify CTF.Lobby_Lime deathMessageVisibility never
-team modify CTF.Lobby_Pink deathMessageVisibility never
-team modify CTF.Lobby_Gray deathMessageVisibility never
-team modify CTF.Lobby_LightGray deathMessageVisibility never
-team modify CTF.Lobby_Cyan deathMessageVisibility never
-team modify CTF.Lobby_Purple deathMessageVisibility never
-team modify CTF.Lobby_Blue deathMessageVisibility never
-team modify CTF.Lobby_Brown deathMessageVisibility never
-team modify CTF.Lobby_Green deathMessageVisibility never
-team modify CTF.Lobby_Red deathMessageVisibility never
-team modify CTF.Lobby_Black deathMessageVisibility never
+team modify lobby.white deathMessageVisibility never
+team modify lobby.orange deathMessageVisibility never
+team modify lobby.magenta deathMessageVisibility never
+team modify lobby.light_blue deathMessageVisibility never
+team modify lobby.yellow deathMessageVisibility never
+team modify lobby.lime deathMessageVisibility never
+team modify lobby.pink deathMessageVisibility never
+team modify lobby.gray deathMessageVisibility never
+team modify lobby.light_gray deathMessageVisibility never
+team modify lobby.cyan deathMessageVisibility never
+team modify lobby.purple deathMessageVisibility never
+team modify lobby.blue deathMessageVisibility never
+team modify lobby.brown deathMessageVisibility never
+team modify lobby.green deathMessageVisibility never
+team modify lobby.red deathMessageVisibility never
+team modify lobby.black deathMessageVisibility never
 
-team modify CTF.Lobby_White collisionRule never
-team modify CTF.Lobby_Orange collisionRule never
-team modify CTF.Lobby_Magenta collisionRule never
-team modify CTF.Lobby_LightBlue collisionRule never
-team modify CTF.Lobby_Yellow collisionRule never
-team modify CTF.Lobby_Lime collisionRule never
-team modify CTF.Lobby_Pink collisionRule never
-team modify CTF.Lobby_Gray collisionRule never
-team modify CTF.Lobby_LightGray collisionRule never
-team modify CTF.Lobby_Cyan collisionRule never
-team modify CTF.Lobby_Purple collisionRule never
-team modify CTF.Lobby_Blue collisionRule never
-team modify CTF.Lobby_Brown collisionRule never
-team modify CTF.Lobby_Green collisionRule never
-team modify CTF.Lobby_Red collisionRule never
-team modify CTF.Lobby_Black collisionRule never
+team modify lobby.white collisionRule never
+team modify lobby.orange collisionRule never
+team modify lobby.magenta collisionRule never
+team modify lobby.light_blue collisionRule never
+team modify lobby.yellow collisionRule never
+team modify lobby.lime collisionRule never
+team modify lobby.pink collisionRule never
+team modify lobby.gray collisionRule never
+team modify lobby.light_gray collisionRule never
+team modify lobby.cyan collisionRule never
+team modify lobby.purple collisionRule never
+team modify lobby.blue collisionRule never
+team modify lobby.brown collisionRule never
+team modify lobby.green collisionRule never
+team modify lobby.red collisionRule never
+team modify lobby.black collisionRule never
 
 # NOTE(alex): Set up the bossbars which serve as the scoreboard
 bossbar add ctf:white [{"text":"Captured Flags - ","color":"white"},{"text":"White","color":"white"}]
@@ -182,30 +182,11 @@ bossbar set ctf:green max 6
 bossbar set ctf:red max 6
 bossbar set ctf:black max 6
 
-# NOTE(alex): Each team has its own cooldown per flag
-scoreboard objectives add CTF.WhitePickupCooldown dummy
-scoreboard objectives add CTF.OrangePickupCooldown dummy
-scoreboard objectives add CTF.OrangePickupCooldown dummy
-scoreboard objectives add CTF.MagentaPickupCooldown dummy
-scoreboard objectives add CTF.LightBluePickupCooldown dummy
-scoreboard objectives add CTF.YellowPickupCooldown dummy
-scoreboard objectives add CTF.LimePickupCooldown dummy
-scoreboard objectives add CTF.PinkPickupCooldown dummy
-scoreboard objectives add CTF.GrayPickupCooldown dummy
-scoreboard objectives add CTF.LightGrayPickupCooldown dummy
-scoreboard objectives add CTF.CyanPickupCooldown dummy
-scoreboard objectives add CTF.PurplePickupCooldown dummy
-scoreboard objectives add CTF.BluePickupCooldown dummy
-scoreboard objectives add CTF.BrownPickupCooldown dummy
-scoreboard objectives add CTF.GreenPickupCooldown dummy
-scoreboard objectives add CTF.RedPickupCooldown dummy
-scoreboard objectives add CTF.BlackPickupCooldown dummy
-
 scoreboard objectives add temp dummy
 scoreboard objectives add gid dummy
-scoreboard objectives add death_count deathCount
+scoreboard objectives add class dummy
 
-# NOTE(alex): Ability cooldowns
+# NOTE(alex): Ability triggers
 scoreboard objectives add arrow_regen.cooldown dummy
 scoreboard objectives add arrow_regen.count dummy
 scoreboard objectives add wind_charge.cooldown dummy
@@ -224,3 +205,23 @@ scoreboard objectives add hunters_eye.cooldown dummy
 scoreboard objectives add hunters_eye.count dummy
 scoreboard objectives add levitation_wand.cooldown dummy
 scoreboard objectives add beast_tamer_horn.cooldown dummy
+scoreboard objectives add death_count deathCount
+
+# NOTE(alex): Each team has its own cooldown per flag
+scoreboard objectives add pickup_cooldown.white dummy
+scoreboard objectives add pickup_cooldown.orange dummy
+scoreboard objectives add pickup_cooldown.orange dummy
+scoreboard objectives add pickup_cooldown.magenta dummy
+scoreboard objectives add pickup_cooldown.light_blue dummy
+scoreboard objectives add pickup_cooldown.yellow dummy
+scoreboard objectives add pickup_cooldown.lime dummy
+scoreboard objectives add pickup_cooldown.pink dummy
+scoreboard objectives add pickup_cooldown.gray dummy
+scoreboard objectives add pickup_cooldown.lightgray dummy
+scoreboard objectives add pickup_cooldown.cyan dummy
+scoreboard objectives add pickup_cooldown.purple dummy
+scoreboard objectives add pickup_cooldown.blue dummy
+scoreboard objectives add pickup_cooldown.brown dummy
+scoreboard objectives add pickup_cooldown.green dummy
+scoreboard objectives add pickup_cooldown.red dummy
+scoreboard objectives add pickup_cooldown.black dummy

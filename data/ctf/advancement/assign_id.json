@@ -5,6 +5,6 @@
         }
     },
     "rewards": {
-        "function": "ctf:internal/assign_id"
+        "function": "ctf:player/assign_id"
     }
 }

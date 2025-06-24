@@ -10,3 +10,4 @@
 
 scoreboard players add .next_id gid 1
 scoreboard players operation @s gid = .next_id gid
+scoreboard players set @s class 0

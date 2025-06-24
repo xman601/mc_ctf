@@ -14,22 +14,15 @@
 #             4 - Scout
 #             5 - Spearthrower
 #             6 - Mage
-#
-
-# NOTE(alex): Default class if none is selected
-scoreboard players set .class CTF.Temp 0
-
-function ctf:uuid/load_data
-execute store result score .class CTF.Temp run data get storage ctf:temp Dest.Class
 
 function ctf:player/clear_hotbar
 
-execute if score .class CTF.Temp matches 0 run function ctf:class/swordsman
-execute if score .class CTF.Temp matches 1 run function ctf:class/ranger
-execute if score .class CTF.Temp matches 2 run function ctf:class/guardian
-execute if score .class CTF.Temp matches 3 run function ctf:class/rogue
-execute if score .class CTF.Temp matches 4 run function ctf:class/scout
-execute if score .class CTF.Temp matches 5 run function ctf:class/spearthrower
-execute if score .class CTF.Temp matches 6 run function ctf:class/mage
+execute if score @s class matches 0 run return run function ctf:class/swordsman
+execute if score @s class matches 1 run return run function ctf:class/ranger
+execute if score @s class matches 2 run return run function ctf:class/guardian
+execute if score @s class matches 3 run return run function ctf:class/rogue
+execute if score @s class matches 4 run return run function ctf:class/scout
+execute if score @s class matches 5 run return run function ctf:class/spearthrower
+execute if score @s class matches 6 run return run function ctf:class/mage
 
 # function ctf:internal/refill_items_on_respawn

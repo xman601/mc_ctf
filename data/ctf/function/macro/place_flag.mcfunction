@@ -6,21 +6,21 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$summon sheep ~ ~ ~ {PersistenceRequired:1b, Invulnerable:1b, NoAI:0b, DeathLootTable:"minecraft:empty", Color:$(Color), Tags:["CTF.IsFlag"], Team:"CTF.NoHitBoxes"}
+$summon sheep ~ ~ ~ {PersistenceRequired:1b, Invulnerable:1b, NoAI:0b, DeathLootTable:"minecraft:empty", Color:$(Color), Tags:["CTF.IsFlag"], Team:"no_hitbox"}
 
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.WhitePickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.OrangePickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.MagentaPickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.LightBluePickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.YellowPickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.LimePickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.PinkPickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.GrayPickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.LightGrayPickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.CyanPickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.PurplePickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.BluePickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.BrownPickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.GreenPickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.RedPickupCooldown 60
-scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] CTF.BlackPickupCooldown 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] white 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] orange 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] magenta 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] light_blue 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] yellow 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] lime 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] pink 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] gray 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] light_gray 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] cyan 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] purple 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] blue 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] brown 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] green 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] red 60
+scoreboard players set @e[tag=CTF.IsFlag,sort=nearest,limit=1] black 60

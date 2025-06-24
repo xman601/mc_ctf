@@ -6,22 +6,22 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-execute if entity @s[team=CTF.White] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"White"}
-execute if entity @s[team=CTF.Orange] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Orange"}
-execute if entity @s[team=CTF.Magenta] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Magenta"}
-execute if entity @s[team=CTF.LightBlue] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Light Blue"}
-execute if entity @s[team=CTF.Yellow] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Yellow"}
-execute if entity @s[team=CTF.Lime] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Lime"}
-execute if entity @s[team=CTF.Pink] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Pink"}
-execute if entity @s[team=CTF.Gray] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Gray"}
-execute if entity @s[team=CTF.LightGray] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Light Gray"}
-execute if entity @s[team=CTF.Cyan] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Cyan"}
-execute if entity @s[team=CTF.Purple] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Purple"}
-execute if entity @s[team=CTF.Blue] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Blue"}
-execute if entity @s[team=CTF.Brown] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Brown"}
-execute if entity @s[team=CTF.Green] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Green"}
-execute if entity @s[team=CTF.Red] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Red"}
-execute if entity @s[team=CTF.Black] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"Black"}
+execute if entity @s[team=white] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"white"}
+execute if entity @s[team=orange] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"orange"}
+execute if entity @s[team=magenta] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"magenta"}
+execute if entity @s[team=light_blue] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"light_blue"}
+execute if entity @s[team=yellow] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"yellow"}
+execute if entity @s[team=lime] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"lime"}
+execute if entity @s[team=pink] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"pink"}
+execute if entity @s[team=gray] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"gray"}
+execute if entity @s[team=light_gray] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"light_gray"}
+execute if entity @s[team=cyan] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"cyan"}
+execute if entity @s[team=purple] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"purple"}
+execute if entity @s[team=blue] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"blue"}
+execute if entity @s[team=brown] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"brown"}
+execute if entity @s[team=green] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"green"}
+execute if entity @s[team=red] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"red"}
+execute if entity @s[team=black] as @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] run function ctf:game/set_flag_cooldown {Color:"black"}
 
 scoreboard players reset @e[type=sheep,tag=CTF.IsFlag,tag=CTF.DropMe] gid
 

@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "ctf:ability/enhancement_tome/activate"
+    "function": "ctf:ability/enhancement_tome/use"
   }
 }

@@ -8,5 +8,4 @@
 
 particle minecraft:heart ~ ~0.5 ~ 0.5 0.5 0.5 0.1 10 normal
 effect give @s instant_health 1 3 true
-
 advancement revoke @s only ctf:kill_player

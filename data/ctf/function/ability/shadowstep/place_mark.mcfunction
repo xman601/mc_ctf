@@ -7,7 +7,7 @@
 # ========================================================================
 
 tag @s add CTF.ShadowStepMark
-scoreboard players operation @s CTF.ID = @p CTF.ID
+scoreboard players operation @s gid = @p gid
 
 # NOTE(alex): Make sure the mark is facing the same direction as the player
 execute at @s rotated as @p run tp @s ~ ~ ~ ~ ~

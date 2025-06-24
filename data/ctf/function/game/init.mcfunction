@@ -201,16 +201,11 @@ scoreboard objectives add CTF.GreenPickupCooldown dummy
 scoreboard objectives add CTF.RedPickupCooldown dummy
 scoreboard objectives add CTF.BlackPickupCooldown dummy
 
-# NOTE(alex): This is a global scoreboard that can be used
-# for any temporary calculations.
-scoreboard objectives add CTF.Temp dummy
-scoreboard objectives add CTF.ID dummy
+scoreboard objectives add temp dummy
+scoreboard objectives add gid dummy
+scoreboard objectives add death_count deathCount
 
 # NOTE(alex): Ability cooldowns
-scoreboard objectives add CTF.LevitationCooldown dummy
-scoreboard objectives add CTF.BeastTamerHornCooldown dummy
-
-# NOTE(alex): Item cooldowns
 scoreboard objectives add arrow_regen.cooldown dummy
 scoreboard objectives add arrow_regen.count dummy
 scoreboard objectives add wind_charge.cooldown dummy
@@ -227,10 +222,5 @@ scoreboard objectives add shadowstep.count dummy
 scoreboard objectives add shadowstep.active_time dummy
 scoreboard objectives add hunters_eye.cooldown dummy
 scoreboard objectives add hunters_eye.count dummy
-
-# NOTE(alex): Triggers
-scoreboard objectives add CTF.DeathTrigger deathCount
-scoreboard objectives add CTF.DamageTrigger minecraft.custom:minecraft.damage_taken
-
-function ctf:timer/timer_1s
-function ctf:timer/timer_10s
+scoreboard objectives add levitation_wand.cooldown dummy
+scoreboard objectives add beast_tamer_horn.cooldown dummy

@@ -10,6 +10,6 @@ execute positioned ^ ^1 ^2 summon fireball run function ctf:ability/fire_powder/
 
 particle minecraft:flame ~ ~ ~ 0.1 0.1 0.1 0.2 100 force
 
-scoreboard players add @s fire_powder.count 1
-execute unless score @s fire_powder.cooldown matches 1.. run function ctf:ability/fire_powder/start_cooldown
+execute if entity @s[gamemode=!creative,gamemode=!spectator] run scoreboard players add @s fire_powder.count 1
+execute if entity @s[gamemode=!creative,gamemode=!spectator] unless score @s fire_powder.cooldown matches 1.. run function ctf:ability/fire_powder/start_cooldown
 advancement revoke @s only ctf:use_fire_powder

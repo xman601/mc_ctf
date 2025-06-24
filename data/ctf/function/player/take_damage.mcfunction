@@ -6,6 +6,5 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-# NOTE(alex): This is a utility for mapmakers who accidentially pick up a flag!
-
-function ctf:internal/player_drop_all_flags
+function ctf:game/drop_flag
+advancement revoke @s only ctf:take_damage

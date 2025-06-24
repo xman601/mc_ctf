@@ -20,3 +20,6 @@ $team empty CTF.$(Team2)
 
 $bossbar set $(Team1Bossbar) players @a[team=CTF.$(Team1)]
 $bossbar set $(Team2Bossbar) players @a[team=CTF.$(Team2)]
+
+# title @a[tag=CTF.WonGame] title {"text":"Victory!","color":"gold"}
+# title @a[tag=CTF.LostGame] title {"text":"Defeat","color":"red"}

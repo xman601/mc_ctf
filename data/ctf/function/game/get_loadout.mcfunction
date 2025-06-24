@@ -22,7 +22,7 @@ scoreboard players set .class CTF.Temp 0
 function ctf:uuid/load_data
 execute store result score .class CTF.Temp run data get storage ctf:temp Dest.Class
 
-function ctf:internal/player_clear_hotbar
+function ctf:player/clear_hotbar
 
 execute if score .class CTF.Temp matches 0 run function ctf:class/swordsman
 execute if score .class CTF.Temp matches 1 run function ctf:class/ranger
@@ -32,4 +32,4 @@ execute if score .class CTF.Temp matches 4 run function ctf:class/scout
 execute if score .class CTF.Temp matches 5 run function ctf:class/spearthrower
 execute if score .class CTF.Temp matches 6 run function ctf:class/mage
 
-function ctf:internal/refill_items_on_respawn
+# function ctf:internal/refill_items_on_respawn

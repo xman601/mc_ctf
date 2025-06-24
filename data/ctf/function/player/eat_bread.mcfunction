@@ -11,4 +11,4 @@ advancement revoke @s only ctf:eat_bread
 execute if items entity @s weapon.offhand bread[minecraft:custom_data~{CTF.NoDrop:true}] run tag @s add CTF.BreadIsOffhand
 
 tag @s add CTF.NeedsMoreBread
-schedule function ctf:internal/give_more_bread 1t replace
+schedule function ctf:player/give_more_bread 1t replace

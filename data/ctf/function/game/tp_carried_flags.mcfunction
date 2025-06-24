@@ -6,7 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-# NOTE(alex): This assigns a globally unique ID to the entity
+# NOTE(alex): This function is called as the player!
 
-scoreboard players add .next_id CTF.ID 1
-scoreboard players operation @s CTF.ID = .next_id CTF.ID
+scoreboard players set .stack_height temp 0
+execute as @e[tag=CTF.IsFlag] if score @s gid = @p gid run function ctf:game/tp_flag_to_player_head

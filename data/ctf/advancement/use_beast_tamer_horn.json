@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "ctf:ability/beast_tamer_horn/activate"
+    "function": "ctf:ability/beast_tamer_horn/use"
   }
 }

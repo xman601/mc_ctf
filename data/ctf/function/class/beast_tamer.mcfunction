@@ -10,10 +10,10 @@ item replace entity @s hotbar.0 with stone_sword[item_name='{"text":"Shepherd\'s
 item replace entity @s hotbar.1 with goat_horn[instrument="minecraft:ponder_goat_horn",custom_data={CTF.NoDrop:true,CTF.BeastTamerHorn:true}] 1
 item replace entity @s hotbar.2 with wheat[item_name='{"text":"Animal Lure"}',enchantment_glint_override=true,custom_data={CTF.NoDrop:true}] 1
 
-execute store result storage ctf:temp Args.ID int 1 run scoreboard players get @s CTF.ID
+execute store result storage ctf:temp Args.ID int 1 run scoreboard players get @s gid
 data modify storage ctf:temp Args.UUID set from entity @s UUID
 
 function ctf:ability/beast_tamer_wolf/respawn_skoll with storage ctf:temp Args
 function ctf:ability/beast_tamer_wolf/respawn_hati with storage ctf:temp Args
 
-scoreboard players operation @e[type=wolf,tag=CTF.BeastTamerWolf,distance=0] CTF.ID = @s CTF.ID
+scoreboard players operation @e[type=wolf,tag=CTF.BeastTamerWolf,distance=0] gid = @s gid

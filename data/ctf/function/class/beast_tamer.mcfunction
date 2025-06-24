@@ -6,7 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-item replace entity @s hotbar.0 with stone_sword[item_name='{"text":"Shepherd\'s Rod"}',item_model="minecraft:wooden_hoe",enchantments={"minecraft:sweeping_edge":3},enchantment_glint_override=false,unbreakable={},custom_data={CTF.NoDrop:true}] 1
+item replace entity @s hotbar.0 with stone_sword[item_name='{"text":"Shepherd\'s Rod"}',item_model="minecraft:wooden_hoe",enchantments={"minecraft:sweeping_edge":3},enchantment_glint_override=false,unbreakable={},consumable={consume_seconds:1000000000,animation:"block"},custom_data={CTF.NoDrop:true,CTF.BlockSword:true}] 1
 item replace entity @s hotbar.1 with goat_horn[instrument="minecraft:ponder_goat_horn",custom_data={CTF.NoDrop:true,CTF.BeastTamerHorn:true}] 1
 item replace entity @s hotbar.2 with wheat[item_name='{"text":"Animal Lure"}',enchantment_glint_override=true,custom_data={CTF.NoDrop:true}] 1
 

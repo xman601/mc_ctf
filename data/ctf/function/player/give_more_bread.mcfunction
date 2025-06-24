@@ -15,7 +15,7 @@ execute as @a[tag=CTF.NeedsMoreBread] unless items entity @s weapon.mainhand * r
 execute as @a[tag=CTF.NeedsMoreBread,tag=CTF.BreadIsMainhand] run item replace entity @s weapon.mainhand with bread[custom_data={CTF.NoDrop:true}] 1
 execute as @a[tag=CTF.NeedsMoreBread,tag=CTF.BreadIsMainhand] run tag @s remove CTF.NeedsMoreBread
 
-execute as @a[tag=CTF.NeedsMoreBread] run function ctf:macro/get_non_droppable_item {ItemName:"bread", ItemCount:1}
+execute as @a[tag=CTF.NeedsMoreBread] run function ctf:player/get_non_droppable_item {ItemName:"bread", ItemCount:1}
 
 tag @a remove CTF.NeedsMoreBread
 tag @a remove CTF.BreadIsMainhand

@@ -13,3 +13,5 @@
 item replace entity @s hotbar.0 with iron_sword[unbreakable={},consumable={consume_seconds:1000000000,animation:"block"},custom_data={CTF.NoDrop:true,CTF.BlockSword:true}] 1
 item replace entity @s hotbar.1 with crossbow[unbreakable={},enchantments={"minecraft:quick_charge":2},enchantment_glint_override=false,custom_data={CTF.NoDrop:true}] 1
 item replace entity @s hotbar.2 with diamond_axe[unbreakable={},custom_data={CTF.NoDrop:true}] 1
+item replace entity @s hotbar.3 with arrow[custom_data={CTF.NoDrop:true}] 5
+item replace entity @s hotbar.4 with wind_charge[custom_data={CTF.NoDrop:true}] 5

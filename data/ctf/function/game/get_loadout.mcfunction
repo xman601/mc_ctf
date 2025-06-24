@@ -24,5 +24,3 @@ execute if score @s class matches 3 run return run function ctf:class/rogue
 execute if score @s class matches 4 run return run function ctf:class/scout
 execute if score @s class matches 5 run return run function ctf:class/spearthrower
 execute if score @s class matches 6 run return run function ctf:class/mage
-
-# function ctf:internal/refill_items_on_respawn

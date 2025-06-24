@@ -6,5 +6,4 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$execute store result score .item_count CTF.Temp if items entity @s container.* $(ItemName)
-$execute unless score .item_count CTF.Temp matches $(ItemMax).. run function ctf:macro/get_non_droppable_item {ItemName:$(ItemName), ItemCount:1}
+$give @s arrow[custom_data={CTF.NoDrop:true}] $(Count)

@@ -13,4 +13,4 @@ scoreboard players reset @s wind_charge.cooldown
 scoreboard players remove @s wind_charge.count 1
 execute if score @s wind_charge.count matches 1.. run function ctf:ability/wind_charge/start_cooldown
 
-give @s wind_charge[custom_data={CTF.NoDrop:true}] 1
+function ctf:ability/wind_charge/give {Count:1}

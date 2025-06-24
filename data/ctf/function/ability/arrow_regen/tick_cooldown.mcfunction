@@ -13,4 +13,4 @@ scoreboard players reset @s arrow_regen.cooldown
 scoreboard players remove @s arrow_regen.count 1
 execute if score @s arrow_regen.count matches 1.. run function ctf:ability/arrow_regen/start_cooldown
 
-give @s arrow[custom_data={CTF.NoDrop:true}] 1
+function ctf:ability/arrow_regen/give {Count:1}

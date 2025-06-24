@@ -6,6 +6,5 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-# TODO(alex): Give player items back on respawn!
-
+function ctf:player/refill_items_on_respawn
 advancement revoke @s only ctf:death

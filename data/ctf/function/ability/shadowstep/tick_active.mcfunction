@@ -13,4 +13,4 @@ execute if score @s shadowstep.active_time matches 1.. run return run advancemen
 scoreboard players reset @s shadowstep.active_time
 
 # NOTE(alex): Find mark and teleport to it!
-execute at @s as @e[type=marker,tag=CTF.ShadowStepMark] if score @s gid = @p gid at @s run return run function ctf:ability/shadowstep/tp_and_kill_mark
+execute at @s as @e[type=marker,tag=CTF.ShadowStepMark] if score @s gid = @p gid run return run function ctf:ability/shadowstep/tp_and_kill_mark

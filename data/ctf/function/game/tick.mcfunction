@@ -7,8 +7,7 @@
 # ========================================================================
 
 # NOTE(alex): Handle player death
-execute as @a[scores={death_count=1..}] run function ctf:game/drop_all_flags
-scoreboard players reset @a[scores={death_count=1..}] death_count
+execute as @a[scores={death_count=1..}] run function ctf:player/death
 
 # NOTE(alex): Disallow dropping items
 execute as @e[type=item] if items entity @s contents *[minecraft:custom_data~{CTF.NoDrop:true}] at @s run function ctf:player/tp_item_to_owner

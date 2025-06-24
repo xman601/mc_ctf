@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "blocked": false,
+                    "type": {
+                        "source_entity": {
+                            "type": "minecraft:player"
+                        },
+                        "direct_entity": {
+                            "type": "minecraft:trident"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "ctf:ability/spear/hit"
+    }
+}

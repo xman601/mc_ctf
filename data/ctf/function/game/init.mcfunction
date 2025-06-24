@@ -205,6 +205,7 @@ scoreboard objectives add hunters_eye.cooldown dummy
 scoreboard objectives add hunters_eye.count dummy
 scoreboard objectives add levitation_wand.cooldown dummy
 scoreboard objectives add beast_tamer_horn.cooldown dummy
+scoreboard objectives add spear.bleeding_time dummy
 scoreboard objectives add death_count deathCount
 
 # NOTE(alex): Each team has its own cooldown per flag

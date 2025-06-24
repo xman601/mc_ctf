@@ -1,7 +1,7 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:consume_item",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": {
                     "type_specific": {
@@ -15,12 +15,14 @@
                                 }
                             }
                         }
-                    }
-                },
-                "item": {
-                    "predicates": {
-                        "minecraft:custom_data": {
-                            "CTF.EnhancementTome": true
+                    },
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": {
+                                    "CTF.DiminishmentTome": true
+                                }
+                            }
                         }
                     }
                 }
@@ -28,6 +30,6 @@
         }
     },
     "rewards": {
-        "function": "ctf:ability/enhancement_tome/use"
+        "function": "ctf:ability/diminishment_tome/look_at_player"
     }
 }

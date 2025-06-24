@@ -6,10 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-playsound minecraft:entity.illusioner.mirror_move master @a ~ ~ ~
+damage @s 1 minecraft:generic
+particle block{block_state:"minecraft:redstone_block"} ~ ~0.5 ~ 0 0 0 1 25 force
 
-tp @p @s
-execute at @s run playsound minecraft:entity.illusioner.mirror_move master @a ~ ~ ~
-execute at @s run particle minecraft:dragon_breath ~ ~0.5 ~ 0.5 0.5 0.5 0.1 50 force
-
-kill @s
+execute store result score .divisor temp run random value 20..30

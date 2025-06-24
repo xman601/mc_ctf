@@ -1,19 +1,33 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
-          "predicates": {
-            "minecraft:custom_data": {
-              "CTF.DiminishmentTome": true
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "minecraft:player",
+                        "looking_at": {
+                            "type": "minecraft:player",
+                            "distance": {
+                                "absolute": {
+                                    "min": 0.1,
+                                    "max": 30
+                                }
+                            }
+                        }
+                    }
+                },
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "CTF.DiminishmentTome": true
+                        }
+                    }
+                }
             }
-          }
         }
-      }
+    },
+    "rewards": {
+        "function": "ctf:ability/diminishment_tome/use"
     }
-  },
-  "rewards": {
-    "function": "ctf:ability/diminishment_tome/use"
-  }
 }

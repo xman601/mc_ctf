@@ -13,3 +13,6 @@ function ctf:player/refill_item {Scoreboard:"diminishment_tome"}
 function ctf:player/refill_item {Scoreboard:"hunters_eye"}
 function ctf:player/refill_item {Scoreboard:"shadowstep"}
 function ctf:player/refill_item {Scoreboard:"wind_charge"}
+function ctf:player/refill_item {Scoreboard:"berserker_potion"}
+function ctf:player/refill_item {Scoreboard:"swiftness_potion"}
+function ctf:player/refill_item {Scoreboard:"invisibility_potion"}

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "CTF.InvisibilityPotion": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ctf:ability/invisibility_potion/use"
+  }
+}

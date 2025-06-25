@@ -6,6 +6,4 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-particle minecraft:heart ~ ~0.5 ~ 0.5 0.5 0.5 0.1 10 normal
-effect give @s instant_health 1 0 true
-advancement revoke @s only ctf:kill_player
+$give @s potion[potion_contents={potion:"minecraft:swiftness"},!use_remainder,custom_data={CTF.NoDrop:true,CTF.SwiftnessPotion:true}] $(Count)

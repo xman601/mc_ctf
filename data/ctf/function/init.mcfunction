@@ -9,6 +9,14 @@
 team add no_hitbox
 team modify no_hitbox collisionRule never
 
+team add knights
+team add raiders
+
+team modify knights deathMessageVisibility never
+team modify raiders deathMessageVisibility never
+team modify knights collisionRule never
+team modify raiders collisionRule never
+
 team add white "White"
 team add orange "Orange"
 team add magenta "Magenta"
@@ -42,76 +50,6 @@ team modify brown color dark_red
 team modify green color dark_green
 team modify red color red
 team modify black color black
-
-# NOTE(alex): These teams are for players who select a team
-# in the lobby, but are not actually in the game!
-team add lobby.white "White"
-team add lobby.orange "Orange"
-team add lobby.magenta "Magenta"
-team add lobby.light_blue "Light Blue"
-team add lobby.yellow "Yellow"
-team add lobby.lime "Lime"
-team add lobby.pink "Pink"
-team add lobby.gray "Gray"
-team add lobby.light_gray "Light Gray"
-team add lobby.cyan "Cyan"
-team add lobby.purple "Purple"
-team add lobby.blue "Blue"
-team add lobby.brown "Brown"
-team add lobby.green "Green"
-team add lobby.red "Red"
-team add lobby.black "Black"
-
-team modify lobby.white color white
-team modify lobby.orange color gold
-team modify lobby.magenta color light_purple
-team modify lobby.light_blue color aqua
-team modify lobby.yellow color yellow
-team modify lobby.lime color green
-team modify lobby.pink color light_purple
-team modify lobby.gray color dark_gray
-team modify lobby.light_gray color gray
-team modify lobby.cyan color dark_aqua
-team modify lobby.purple color dark_purple
-team modify lobby.blue color blue
-team modify lobby.brown color dark_red
-team modify lobby.green color dark_green
-team modify lobby.red color red
-team modify lobby.black color black
-
-team modify lobby.white deathMessageVisibility never
-team modify lobby.orange deathMessageVisibility never
-team modify lobby.magenta deathMessageVisibility never
-team modify lobby.light_blue deathMessageVisibility never
-team modify lobby.yellow deathMessageVisibility never
-team modify lobby.lime deathMessageVisibility never
-team modify lobby.pink deathMessageVisibility never
-team modify lobby.gray deathMessageVisibility never
-team modify lobby.light_gray deathMessageVisibility never
-team modify lobby.cyan deathMessageVisibility never
-team modify lobby.purple deathMessageVisibility never
-team modify lobby.blue deathMessageVisibility never
-team modify lobby.brown deathMessageVisibility never
-team modify lobby.green deathMessageVisibility never
-team modify lobby.red deathMessageVisibility never
-team modify lobby.black deathMessageVisibility never
-
-team modify lobby.white collisionRule never
-team modify lobby.orange collisionRule never
-team modify lobby.magenta collisionRule never
-team modify lobby.light_blue collisionRule never
-team modify lobby.yellow collisionRule never
-team modify lobby.lime collisionRule never
-team modify lobby.pink collisionRule never
-team modify lobby.gray collisionRule never
-team modify lobby.light_gray collisionRule never
-team modify lobby.cyan collisionRule never
-team modify lobby.purple collisionRule never
-team modify lobby.blue collisionRule never
-team modify lobby.brown collisionRule never
-team modify lobby.green collisionRule never
-team modify lobby.red collisionRule never
-team modify lobby.black collisionRule never
 
 # NOTE(alex): Set up the bossbars which serve as the scoreboard
 bossbar add ctf:white [{"text":"Captured Flags - ","color":"white"},{"text":"White","color":"white"}]

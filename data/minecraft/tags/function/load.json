@@ -1,6 +1,6 @@
 {
     "values": [
         "find_looking:internal/load",
-        "ctf:game/init"
+        "ctf:init"
     ]
 }

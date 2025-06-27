@@ -6,4 +6,8 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$summon sheep $(x) $(y) $(z) {PersistenceRequired:1b,Invulnerable:1b,DeathLootTable:"minecraft:empty",Color:$(Color),Team:"no_hitbox",Tags:["CTF.ISFlag"],attributes:[{id:"minecraft:tempt_range",base:100}]}
+$execute store result score .random temp run random value 1..$(Length)
+scoreboard players remove .random temp 1
+
+execute store result storage ctf:temp Args.Index int 1 run scoreboard players get .random temp
+function ctf:game/pick_random_3 with storage ctf:temp Args

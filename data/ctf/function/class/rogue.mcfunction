@@ -10,6 +10,8 @@
 # to hide in the shadows and wait for the opportune moment to strike
 # instead of charging into battle head-first.
 
+function ctf:player/clear_armor
+
 item replace entity @s hotbar.0 with wooden_sword[item_model="minecraft:iron_sword",item_name='{"text":"Iron Dagger"}',unbreakable={},consumable={consume_seconds:1000000000,animation:"block"},custom_data={CTF.NoDrop:true,CTF.BlockSword:true}] 1
 item replace entity @s hotbar.1 with music_disc_5[!jukebox_playable,item_model="minecraft:ender_pearl",item_name='{"text":"Shadowstep"}',rarity="rare",consumable={consume_seconds:0,animation:"eat",has_consume_particles:false,sound:"minecraft:entity.bat.takeoff"},use_cooldown={seconds:7},max_stack_size=64,custom_data={CTF.NoDrop:true,CTF.Shadowstep:true}] 3
 item replace entity @s hotbar.2 with potion[potion_contents={potion:"minecraft:swiftness"},!use_remainder,custom_data={CTF.NoDrop:true,CTF.SwiftnessPotion:true}] 1

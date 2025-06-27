@@ -6,4 +6,4 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$summon sheep $(x) $(y) $(z) {PersistenceRequired:1b,Invulnerable:1b,DeathLootTable:"minecraft:empty",Color:$(Color),Team:"no_hitbox",Tags:["CTF.ISFlag"],attributes:[{id:"minecraft:tempt_range",base:100}]}
+$execute if data storage ctf:world Levels[$(Index)] store result score .value temp run function ctf:game/start with storage ctf:world Levels[$(Index)]

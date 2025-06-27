@@ -6,4 +6,8 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$summon sheep $(x) $(y) $(z) {PersistenceRequired:1b,Invulnerable:1b,DeathLootTable:"minecraft:empty",Color:$(Color),Team:"no_hitbox",Tags:["CTF.ISFlag"],attributes:[{id:"minecraft:tempt_range",base:100}]}
+# NOTE(alex): This returns the length of the array!
+execute store result storage ctf:temp Args.Length int 1 run data get storage ctf:world Levels
+
+function ctf:game/pick_random_2 with storage ctf:temp Args
+data remove storage ctf:temp Args

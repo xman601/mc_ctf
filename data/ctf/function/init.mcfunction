@@ -130,6 +130,14 @@ scoreboard objectives add temp dummy
 scoreboard objectives add gid dummy
 scoreboard objectives add class dummy
 
+scoreboard players reset .next_class class
+function ctf:game/define_class {Class:Swordsman}
+function ctf:game/define_class {Class:Ranger}
+function ctf:game/define_class {Class:Rogue}
+function ctf:game/define_class {Class:Wizard}
+function ctf:game/define_class {Class:BeastTamer}
+function ctf:game/define_class {Class:Spearthrower}
+
 # NOTE(alex): Ability triggers
 scoreboard objectives add arrow_regen.cooldown dummy
 scoreboard objectives add arrow_regen.count dummy
@@ -151,6 +159,7 @@ scoreboard objectives add levitation_wand.cooldown dummy
 scoreboard objectives add beast_tamer_horn.cooldown dummy
 scoreboard objectives add beast_tamer_wolf.live_time dummy
 scoreboard objectives add spear.bleeding_time dummy
+scoreboard objectives add spear.thrown minecraft.used:minecraft.trident
 scoreboard objectives add berserker_potion.cooldown dummy
 scoreboard objectives add berserker_potion.count dummy
 scoreboard objectives add swiftness_potion.cooldown dummy

@@ -5,9 +5,9 @@
             "conditions": {
                 "item": {
                     "items": "minecraft:bread",
-                    "components": {
+                    "predicates": {
                         "minecraft:custom_data": {
-                            "CTF.NoDrop": true
+                            "CTF.InfinityBread": true
                         }
                     }
                 }

@@ -6,6 +6,6 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$team join $(Team)
-playsound minecraft:block.note_block.bass player @s
-$tellraw @s [{"text":"You joined the ","color":"white"},{"text":"$(Team)","color":"$(TextColor)"},{"text":" team","color":"white"}]
+tag @s add thrown_trident
+execute on origin if entity @s[tag=trident_thrower] run return run kill @e[type=trident,tag=thrown_trident]
+tag @s remove thrown_trident

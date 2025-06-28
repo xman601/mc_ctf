@@ -6,6 +6,6 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$team join $(Team)
+$scoreboard players operation @s class = .$(Class) class
 playsound minecraft:block.note_block.bass player @s
-$tellraw @s [{"text":"You joined the ","color":"white"},{"text":"$(Team)","color":"$(TextColor)"},{"text":" team","color":"white"}]
+$tellraw @s [{"text":"You selected the ","color":"white"},{"text":"$(Class)","color":"$(TextColor)"},{"text":" class","color":"white"}]

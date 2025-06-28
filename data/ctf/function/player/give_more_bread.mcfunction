@@ -17,6 +17,4 @@ execute as @a[tag=CTF.NeedsMoreBread,tag=CTF.BreadIsMainhand] run tag @s remove 
 
 execute as @a[tag=CTF.NeedsMoreBread] run function ctf:player/get_non_droppable_item {ItemName:"bread", ItemCount:1}
 
-tag @a remove CTF.NeedsMoreBread
-tag @a remove CTF.BreadIsMainhand
-tag @a remove CTF.BreadIsOffhand
+function ctf:player/remove_bread_tags

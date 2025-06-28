@@ -19,7 +19,7 @@ execute as @e[type=item] if items entity @s contents *[minecraft:custom_data~{CT
 # NOTE(alex): Pickup and teleport flags
 execute as @e[type=sheep,tag=CTF.IsFlag] at @s run function ctf:game/update_flag
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s run function ctf:game/tp_carried_flags
-execute as @e[type=marker,tag=CTF.IsCounter] at @s run function ctf:game/update_goal
+execute as @e[type=text_display,tag=CTF.IsCounter] at @s run function ctf:game/update_goal
 
 # NOTE(alex): Make sure arrows don't ever get picked up
 execute as @e[type=arrow,nbt=!{pickup:2b}] run data merge entity @s {pickup:2b}

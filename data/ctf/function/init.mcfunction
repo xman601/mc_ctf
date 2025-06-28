@@ -13,13 +13,13 @@ team add no_hitbox
 team modify no_hitbox collisionRule never
 team modify no_hitbox deathMessageVisibility never
 
-team add ravagers
-team add raiders
+team add team1
+team add team2
 
-team modify ravagers deathMessageVisibility never
-team modify raiders deathMessageVisibility never
-team modify ravagers collisionRule never
-team modify raiders collisionRule never
+team modify team1 deathMessageVisibility never
+team modify team2 deathMessageVisibility never
+team modify team1 collisionRule never
+team modify team2 collisionRule never
 
 team add white "White"
 team add orange "Orange"

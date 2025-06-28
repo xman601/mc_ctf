@@ -18,11 +18,16 @@ $kill @e[type=sheep,tag=CTF.IsFlag,nbt={Color:$(Team2SheepColor)b}]
 $execute as @a[team=$(Team1)] run function ctf:game/set_player_spawnpoint_and_tp with storage ctf:world LobbyPos
 $execute as @a[team=$(Team2)] run function ctf:game/set_player_spawnpoint_and_tp with storage ctf:world LobbyPos
 
+$execute as @a[team=$(Team1)] run function ctf:player/refill_items_on_respawn
+$execute as @a[team=$(Team2)] run function ctf:player/refill_items_on_respawn
+$execute as @a[team=$(Team1)] run function ctf:player/remove_bread_tags
+$execute as @a[team=$(Team2)] run function ctf:player/remove_bread_tags
+
 $clear @a[team=$(Team1)]
 $clear @a[team=$(Team2)]
 
-$team empty $(Team1)
-$team empty $(Team2)
+$team join team1 @a[team=$(Team1)]
+$team join team2 @a[team=$(Team2)]
 
 $bossbar set ctf:$(Team1) players @a[team=$(Team1)]
 $bossbar set ctf:$(Team2) players @a[team=$(Team2)]

@@ -6,10 +6,8 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$say $(Team1) VS $(Team2)
-
-$team join $(Team1) @a[team=ravagers]
-$team join $(Team2) @a[team=raiders]
+$team join $(Team1) @a[team=team1]
+$team join $(Team2) @a[team=team2]
 
 $execute as @a[team=$(Team1)] run function ctf:player/equip_colored_armor {ArmorColor:$(Team1ArmorColor)}
 $execute as @a[team=$(Team2)] run function ctf:player/equip_colored_armor {ArmorColor:$(Team2ArmorColor)}

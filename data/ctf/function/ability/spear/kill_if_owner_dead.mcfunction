@@ -6,6 +6,4 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-tag @s add thrown_trident
-execute on origin if entity @s[tag=trident_thrower] run return run kill @e[type=trident,tag=thrown_trident]
-tag @s remove thrown_trident
+execute at @s on origin if score @s death_count matches 1.. run return run kill @e[type=trident,distance=0,sort=nearest,limit=1]

@@ -9,6 +9,10 @@
 # NOTE(alex): Handle player death
 execute as @a[scores={death_count=1..}] run function ctf:player/death
 
+# NOTE(alex): The Beast Tamer's wolves die after a certain number of ticks
+execute as @e[type=wolf,tag=CTF.BeastTamerWolf,scores={beast_tamer_wolf.live_time=0}] at @s run function ctf:ability/beast_tamer_horn/kill_wolf
+scoreboard players remove @e[type=wolf,tag=CTF.BeastTamerWolf,scores={beast_tamer_wolf.live_time=1..}] beast_tamer_wolf.live_time 1
+
 # NOTE(alex): Disallow dropping items
 execute as @e[type=item] if items entity @s contents *[minecraft:custom_data~{CTF.NoDrop:true}] at @s run function ctf:player/tp_item_to_owner
 

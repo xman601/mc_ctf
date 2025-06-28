@@ -8,7 +8,7 @@
 
 $say $(Team1) VS $(Team2)
 
-$team join $(Team1) @a[team=knights]
+$team join $(Team1) @a[team=ravagers]
 $team join $(Team2) @a[team=raiders]
 
 $execute as @a[team=$(Team1)] run function ctf:player/equip_colored_armor {ArmorColor:$(Team1ArmorColor)}

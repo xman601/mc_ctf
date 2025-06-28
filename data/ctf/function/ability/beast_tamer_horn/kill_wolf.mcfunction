@@ -6,7 +6,9 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-execute as @e[type=wolf,tag=CTF.BeastTamerWolf] if score @s gid = @p gid run function ctf:ability/beast_tamer_horn/summon_wolf
+particle minecraft:large_smoke ~ ~ ~ 0 0.1 0 0.05 10 force @a
+playsound minecraft:block.fire.extinguish master @a ~ ~ ~
 
-advancement revoke @s only ctf:beast_tamer_horn_cooldown
-scoreboard players set @s CTF.BeastTamerHornCooldown 140
+data remove entity @s Owner
+tp @s ~ ~-200 ~
+kill @s

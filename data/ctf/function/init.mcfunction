@@ -6,15 +6,19 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
+team add no_death_message
+team modify no_death_message deathMessageVisibility never
+
 team add no_hitbox
 team modify no_hitbox collisionRule never
+team modify no_hitbox deathMessageVisibility never
 
-team add knights
+team add ravagers
 team add raiders
 
-team modify knights deathMessageVisibility never
+team modify ravagers deathMessageVisibility never
 team modify raiders deathMessageVisibility never
-team modify knights collisionRule never
+team modify ravagers collisionRule never
 team modify raiders collisionRule never
 
 team add white "White"
@@ -143,6 +147,7 @@ scoreboard objectives add hunters_eye.cooldown dummy
 scoreboard objectives add hunters_eye.count dummy
 scoreboard objectives add levitation_wand.cooldown dummy
 scoreboard objectives add beast_tamer_horn.cooldown dummy
+scoreboard objectives add beast_tamer_wolf.live_time dummy
 scoreboard objectives add spear.bleeding_time dummy
 scoreboard objectives add berserker_potion.cooldown dummy
 scoreboard objectives add berserker_potion.count dummy

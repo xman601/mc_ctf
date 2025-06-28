@@ -10,3 +10,4 @@
 
 scoreboard players set .stack_height temp 0
 execute as @e[tag=CTF.IsFlag] if score @s gid = @p gid run function ctf:game/tp_flag_to_player_head
+scoreboard players reset .stack_height temp

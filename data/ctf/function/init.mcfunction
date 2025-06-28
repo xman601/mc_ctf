@@ -16,6 +16,8 @@ team modify no_hitbox deathMessageVisibility never
 team add team1
 team add team2
 
+team modify team1 color red
+team modify team2 color blue
 team modify team1 deathMessageVisibility never
 team modify team2 deathMessageVisibility never
 team modify team1 collisionRule never

@@ -6,9 +6,6 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-advancement revoke @s only ctf:eat_bread
-
-execute if items entity @s weapon.offhand bread[minecraft:custom_data~{CTF.InfinityBread:true}] run tag @s add CTF.BreadIsOffhand
-
-tag @s add CTF.NeedsMoreBread
-schedule function ctf:player/give_more_bread 2t replace
+function ctf:game/drop_all_flags
+scoreboard players reset @s drop
+advancement revoke @s only ctf:drop_item

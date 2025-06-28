@@ -167,6 +167,7 @@ scoreboard objectives add swiftness_potion.count dummy
 scoreboard objectives add invisibility_potion.cooldown dummy
 scoreboard objectives add invisibility_potion.count dummy
 scoreboard objectives add death_count deathCount
+scoreboard objectives add drop minecraft.custom:minecraft.drop
 
 # NOTE(alex): Each team has its own cooldown per flag
 scoreboard objectives add pickup_cooldown.white dummy

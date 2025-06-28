@@ -13,7 +13,7 @@
 #             3 - Rogue
 #             4 - Scout
 #             5 - Spearthrower
-#             6 - Mage
+#             6 - Wizard
 
 function ctf:player/clear_hotbar
 
@@ -23,4 +23,4 @@ execute if score @s class matches 2 run return run function ctf:class/guardian
 execute if score @s class matches 3 run return run function ctf:class/rogue
 execute if score @s class matches 4 run return run function ctf:class/scout
 execute if score @s class matches 5 run return run function ctf:class/spearthrower
-execute if score @s class matches 6 run return run function ctf:class/mage
+execute if score @s class matches 6 run return run function ctf:class/wizard

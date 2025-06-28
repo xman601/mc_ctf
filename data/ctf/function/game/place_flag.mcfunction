@@ -6,4 +6,4 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$summon sheep $(x) $(y) $(z) {PersistenceRequired:1b,Invulnerable:1b,DeathLootTable:"minecraft:empty",Color:$(Color),Team:"no_hitbox",Tags:["CTF.ISFlag"],attributes:[{id:"minecraft:tempt_range",base:100}]}
+$summon sheep $(x) $(y) $(z) {PersistenceRequired:1b,Invulnerable:1b,DeathLootTable:"minecraft:empty",Color:$(Color),Team:"no_hitbox",Tags:["CTF.IsFlag"],attributes:[{id:"minecraft:tempt_range",base:100}]}

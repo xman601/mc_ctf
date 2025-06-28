@@ -10,13 +10,11 @@ particle minecraft:glow ~ ~1 ~ 0.1 0.1 0.1 0.5 25 force
 playsound minecraft:entity.illusioner.prepare_blindness master @a ~ ~ ~
 
 execute store result score .random temp run random value 1..3
-
 execute if score .random temp matches 1 run return run effect give @s regeneration 30 0 true
 execute if score .random temp matches 2 run return run effect give @s absorption 30 0 true
 execute if score .random temp matches 3 run return run effect give @s strength 10 0 true
 
 execute store result score .random temp run random value 1..3
-
 execute if score .random temp matches 1 run return run effect give @s speed 10 0 true
 execute if score .random temp matches 2 run return run effect give @s instant_health 10 0 true
 execute if score .random temp matches 3 run return run effect give @s saturation 20 0 true

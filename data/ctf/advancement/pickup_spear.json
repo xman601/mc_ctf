@@ -30,6 +30,6 @@
         }
     },
     "rewards": {
-        "function": "ctf:player/pickup_trident"
+        "function": "ctf:ability/spear/pickup"
     }
 }

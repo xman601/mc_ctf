@@ -7,4 +7,4 @@
 # ========================================================================
 
 scoreboard players reset @s spear.thrown
-advancement revoke @s only ctf:pickup_trident
+advancement revoke @s only ctf:pickup_spear

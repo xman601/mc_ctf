@@ -12,6 +12,8 @@
 # potion after the cooldown, that way the player's inventory layout is
 # retained!
 
-item replace entity @s hotbar.0 with trident[item_name='{"text":"Spear","color":"aqua"}',enchantments={"minecraft:loyalty":3},enchantment_glint_override=false,unbreakable={},custom_data={CTF.NoDrop:true,CTF.Spear:true}] 1
-item replace entity @s hotbar.1 with potion[!use_remainder,potion_contents={potion:"minecraft:turtle_master"},custom_data={CTF.NoDrop:true,CTF.TurtleMasterPotion:true}] 1
-item replace entity @s hotbar.2 with wind_charge[custom_data={CTF.NoDrop:true}] 5
+item replace entity @s hotbar.0 with trident[item_name='{"text":"Spear","color":"aqua"}',enchantments={"minecraft:loyalty":3},enchantment_glint_override=false,unbreakable={show_in_tooltip:false},custom_data={CTF.NoDrop:true,CTF.Spear:true}] 1
+item replace entity @s hotbar.1 with trident[item_name='{"text":"Whirlwind","color":"aqua"}',enchantments={"minecraft:riptide":3},enchantment_glint_override=false,unbreakable={show_in_tooltip:false},custom_data={CTF.NoDrop:true}] 1
+item replace entity @s hotbar.2 with music_disc_precipice[!jukebox_playable,item_model="breeze_rod",item_name='{"text":"Drop Flags"}',consumable={consume_seconds:1000000000,animation:"block"},custom_data={CTF.NoDrop:true,CTF.BlockSword:true}] 1
+item replace entity @s hotbar.3 with potion[!use_remainder,potion_contents={potion:"minecraft:turtle_master"},custom_data={CTF.NoDrop:true,CTF.TurtleMasterPotion:true}] 1
+item replace entity @s hotbar.4 with wind_charge[custom_data={CTF.NoDrop:true}] 5

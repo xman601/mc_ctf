@@ -9,6 +9,9 @@
 team add no_death_message
 team modify no_death_message deathMessageVisibility never
 
+team add no_name_tags
+team modify no_name_tags nametagVisibility never
+
 team add no_hitbox
 team modify no_hitbox collisionRule never
 team modify no_hitbox deathMessageVisibility never
@@ -160,6 +163,7 @@ scoreboard objectives add beast_tamer_horn.cooldown dummy
 scoreboard objectives add beast_tamer_wolf.live_time dummy
 scoreboard objectives add spear.bleeding_time dummy
 scoreboard objectives add spear.thrown minecraft.used:minecraft.trident
+scoreboard objectives add bow.use minecraft.used:minecraft.bow
 scoreboard objectives add berserker_potion.cooldown dummy
 scoreboard objectives add berserker_potion.count dummy
 scoreboard objectives add swiftness_potion.cooldown dummy

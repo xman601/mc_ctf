@@ -130,13 +130,13 @@ scoreboard objectives add temp dummy
 scoreboard objectives add gid dummy
 scoreboard objectives add class dummy
 
-scoreboard players reset .next_class class
-function ctf:game/define_class {Class:Swordsman}
-function ctf:game/define_class {Class:Ranger}
-function ctf:game/define_class {Class:Rogue}
-function ctf:game/define_class {Class:Wizard}
-function ctf:game/define_class {Class:BeastTamer}
-function ctf:game/define_class {Class:Spearthrower}
+scoreboard players reset #next_class class
+function ctf:game/define_class {Class:swordsman}
+function ctf:game/define_class {Class:ranger}
+function ctf:game/define_class {Class:rogue}
+function ctf:game/define_class {Class:wizard}
+function ctf:game/define_class {Class:beast_tamer}
+function ctf:game/define_class {Class:spearthrower}
 
 # NOTE(alex): Ability triggers
 scoreboard objectives add arrow_regen.cooldown dummy

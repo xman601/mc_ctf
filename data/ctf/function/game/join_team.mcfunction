@@ -8,4 +8,4 @@
 
 $team join $(Team)
 playsound minecraft:block.note_block.bass player @s
-$tellraw @s [{"text":"You joined the ","color":"white"},{"text":"$(Team)","color":"$(TextColor)"},{"text":" team","color":"white"}]
+$tellraw @s [{"text":"You joined the ","color":"white"},{"text":"$(DisplayName)","color":"$(TextColor)"},{"text":" team","color":"white"}]

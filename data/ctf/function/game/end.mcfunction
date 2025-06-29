@@ -15,16 +15,10 @@ $tp @e[type=sheep,tag=CTF.IsFlag,nbt={Color:$(Team2SheepColor)b}] 0 -200 0
 $kill @e[type=sheep,tag=CTF.IsFlag,nbt={Color:$(Team1SheepColor)b}]
 $kill @e[type=sheep,tag=CTF.IsFlag,nbt={Color:$(Team2SheepColor)b}]
 
-$execute as @a[team=$(Team1)] run function ctf:game/set_player_spawnpoint_and_tp with storage ctf:world LobbyPos
-$execute as @a[team=$(Team2)] run function ctf:game/set_player_spawnpoint_and_tp with storage ctf:world LobbyPos
-
-$execute as @a[team=$(Team1)] run function ctf:player/refill_items_on_respawn
-$execute as @a[team=$(Team2)] run function ctf:player/refill_items_on_respawn
-$execute as @a[team=$(Team1)] run function ctf:player/remove_bread_tags
-$execute as @a[team=$(Team2)] run function ctf:player/remove_bread_tags
-
-$clear @a[team=$(Team1)]
-$clear @a[team=$(Team2)]
+$tag @a[team=$(Team1)] add return_to_lobby
+$tag @a[team=$(Team2)] add return_to_lobby
+execute as @a[tag=return_to_lobby] run function ctf:game/return_to_lobby
+tag @a remove return_to_lobby
 
 $team join team1 @a[team=$(Team1)]
 $team join team2 @a[team=$(Team2)]

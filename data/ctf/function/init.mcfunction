@@ -60,6 +60,23 @@ team modify green color dark_green
 team modify red color red
 team modify black color black
 
+team modify white seeFriendlyInvisibles true
+team modify orange seeFriendlyInvisibles true
+team modify magenta seeFriendlyInvisibles true
+team modify light seeFriendlyInvisibles true
+team modify yellow seeFriendlyInvisibles true
+team modify lime seeFriendlyInvisibles true
+team modify pink seeFriendlyInvisibles true
+team modify gray seeFriendlyInvisibles true
+team modify light seeFriendlyInvisibles true
+team modify cyan seeFriendlyInvisibles true
+team modify purple seeFriendlyInvisibles true
+team modify blue seeFriendlyInvisibles true
+team modify brown seeFriendlyInvisibles true
+team modify green seeFriendlyInvisibles true
+team modify red seeFriendlyInvisibles true
+team modify black seeFriendlyInvisibles true
+
 # NOTE(alex): Set up the bossbars which serve as the scoreboard
 bossbar add ctf:white [{"text":"Captured Flags - ","color":"white"},{"text":"White","color":"white"}]
 bossbar add ctf:orange [{"text":"Captured Flags - ","color":"white"},{"text":"Orange","color":"gold"}]

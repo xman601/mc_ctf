@@ -4,15 +4,10 @@
 - Make sheep not in a goal also lose their color
 - Countdown timer for start game (using /schedule and a score for how many seconds)
 - Actionbar should show how many sheep are on your head
-- Gamerule seeFriendlyInvis?
-- Clear potion effects when returning to lobby
 
 ## Class Tweaks
 
-- Archer needs more arrows, and should only have a wooden sword!
-- Beast Tamer should possibly have a stronger weapon(?), but the wolves should last twice as long
 - Spearthrower needs item descriptions
-- Getting hit as rogue needs to cancel invis and the duration should be NERFED (20 or 30 seconds, MAX)
 
 ## Map Tweaks
 

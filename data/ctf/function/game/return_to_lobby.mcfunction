@@ -6,11 +6,10 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-team leave @s
+function ctf:player/refill_items_on_respawn
+function ctf:player/remove_bread_tags
 
-item replace entity @s armor.head with air
-item replace entity @s armor.chest with air
-item replace entity @s armor.legs with air
-item replace entity @s armor.feet with air
+clear @s
+effect clear @s
 
 function ctf:game/set_player_spawnpoint_and_tp with storage ctf:world LobbyPos

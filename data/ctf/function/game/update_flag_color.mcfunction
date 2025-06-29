@@ -6,7 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$execute if entity @p[team=$(Color),distance=..1] unless score @s pickup_cooldown.$(Color) matches 1.. run scoreboard players operation @s gid = @p[team=$(Color),distance=..1] gid
+$execute if entity @p[team=$(Color),gamemode=adventure,distance=..1] unless score @s gid matches 1.. unless score @s pickup_cooldown.$(Color) matches 1.. at @s run function ctf:game/pickup_flag {Color:$(Color)}
 
 $execute unless score @s pickup_cooldown.$(Color) matches 1.. run return fail
 

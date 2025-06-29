@@ -7,4 +7,4 @@
 # ========================================================================
 
 advancement revoke @s only ctf:arrow_regen_cooldown
-scoreboard players set @s arrow_regen.cooldown 160
+scoreboard players set @s arrow_regen.cooldown 100

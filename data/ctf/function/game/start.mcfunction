@@ -6,8 +6,11 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$team join $(Team1) @a[team=team1]
-$team join $(Team2) @a[team=team2]
+$execute if entity @a[team=$(Team1)] run return fail
+$execute if entity @a[team=$(Team2)] run return fail
+
+$team join $(Team1) @a[team=team1,gamemode=adventure]
+$team join $(Team2) @a[team=team2,gamemode=adventure]
 
 $execute as @a[team=$(Team1)] run function ctf:player/equip_colored_armor {ArmorColor:$(Team1ArmorColor)}
 $execute as @a[team=$(Team2)] run function ctf:player/equip_colored_armor {ArmorColor:$(Team2ArmorColor)}
@@ -24,3 +27,5 @@ data remove storage ctf:temp Flags
 
 $execute as @a[team=$(Team1)] run function ctf:game/set_player_spawnpoint_and_tp $(Team1Pos)
 $execute as @a[team=$(Team2)] run function ctf:game/set_player_spawnpoint_and_tp $(Team2Pos)
+
+return 1

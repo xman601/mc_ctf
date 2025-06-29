@@ -7,6 +7,7 @@
 ## Class Tweaks
 
 - Spearthrower needs item descriptions
+- Maybe replace the Ranger's sword with a crossbow?
 
 ## Map Tweaks
 

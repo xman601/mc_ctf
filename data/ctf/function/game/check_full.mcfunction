@@ -6,4 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$summon sheep $(x) $(y) $(z) {PersistenceRequired:1b,Invulnerable:1b,DeathLootTable:"minecraft:empty",Color:$(Color)b,Team:"no_hitbox",Tags:["CTF.IsFlag","Map.$(Map)"],attributes:[{id:"minecraft:tempt_range",base:100}]}
+$execute if entity @a[team=$(Team1)] run return fail
+$execute if entity @a[team=$(Team2)] run return fail
+
+return 1

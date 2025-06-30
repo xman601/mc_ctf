@@ -6,11 +6,11 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$execute if entity @a[team=$(Team1)] run return fail
-$execute if entity @a[team=$(Team2)] run return fail
-
 $team join $(Team1) @a[team=team1,gamemode=adventure]
 $team join $(Team2) @a[team=team2,gamemode=adventure]
+
+$tellraw @a[team=$(Team1)] [{"text":"Chosen Map: "},{"text":"$(Name)","color":"gold"}]
+$tellraw @a[team=$(Team2)] [{"text":"Chosen Map: "},{"text":"$(Name)","color":"gold"}]
 
 $execute as @a[team=$(Team1)] run function ctf:player/equip_colored_armor {ArmorColor:$(Team1ArmorColor)}
 $execute as @a[team=$(Team2)] run function ctf:player/equip_colored_armor {ArmorColor:$(Team2ArmorColor)}
@@ -22,10 +22,8 @@ $bossbar set ctf:$(Team1) players @a[team=$(Team1)]
 $bossbar set ctf:$(Team2) players @a[team=$(Team2)]
 
 $data modify storage ctf:temp Flags set value $(Flags)
-execute if data storage ctf:temp Flags[0] run function ctf:game/place_next_flag
+$execute if data storage ctf:temp Flags[0] run function ctf:game/place_next_flag {Map:"$(Name)"}
 data remove storage ctf:temp Flags
 
 $execute as @a[team=$(Team1)] run function ctf:game/set_player_spawnpoint_and_tp $(Team1Pos)
 $execute as @a[team=$(Team2)] run function ctf:game/set_player_spawnpoint_and_tp $(Team2Pos)
-
-return 1

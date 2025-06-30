@@ -6,6 +6,10 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
+# NOTE(alex): Sheep that are in a goal don't lose their color!
+
+execute positioned ~-3 ~ ~-3 run scoreboard players reset @e[type=sheep,tag=CTF.IsFlag,dx=7,dy=2,dz=7] sheep.lose_color_timer
+
 # NOTE(alex): Recolor sheep that are in a goal
 
 execute if entity @s[tag=CTF.White] positioned ~-3 ~ ~-3 as @e[dx=7,dy=2,dz=7,type=sheep,tag=CTF.IsFlag,nbt=!{Color:0b}] run data merge entity @s {Color:0b}

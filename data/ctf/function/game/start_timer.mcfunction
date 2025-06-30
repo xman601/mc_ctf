@@ -6,4 +6,11 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$summon sheep $(x) $(y) $(z) {PersistenceRequired:1b,Invulnerable:1b,DeathLootTable:"minecraft:empty",Color:$(Color)b,Team:"no_hitbox",Tags:["CTF.IsFlag","Map.$(Map)"],attributes:[{id:"minecraft:tempt_range",base:100}]}
+scoreboard players set .start_timer temp 200
+
+tag @a[team=team1] add send_message
+tag @a[team=team2] add send_message
+
+tellraw @a[tag=send_message] [{"text":"Starting game in "},{"text":"10","color":"green"},{"text":" seconds!"}]
+
+tag @a remove send_message

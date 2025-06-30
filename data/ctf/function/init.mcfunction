@@ -29,7 +29,7 @@ team modify team2 collisionRule never
 team add white "White"
 team add orange "Orange"
 team add magenta "Magenta"
-team add lightblue "Light Blue"
+team add light_blue "Light Blue"
 team add yellow "Yellow"
 team add lime "Lime"
 team add pink "Pink"
@@ -63,12 +63,12 @@ team modify black color black
 team modify white seeFriendlyInvisibles true
 team modify orange seeFriendlyInvisibles true
 team modify magenta seeFriendlyInvisibles true
-team modify light seeFriendlyInvisibles true
+team modify light_blue seeFriendlyInvisibles true
 team modify yellow seeFriendlyInvisibles true
 team modify lime seeFriendlyInvisibles true
 team modify pink seeFriendlyInvisibles true
 team modify gray seeFriendlyInvisibles true
-team modify light seeFriendlyInvisibles true
+team modify light_gray seeFriendlyInvisibles true
 team modify cyan seeFriendlyInvisibles true
 team modify purple seeFriendlyInvisibles true
 team modify blue seeFriendlyInvisibles true
@@ -189,6 +189,7 @@ scoreboard objectives add invisibility_potion.cooldown dummy
 scoreboard objectives add invisibility_potion.count dummy
 scoreboard objectives add death_count deathCount
 scoreboard objectives add drop minecraft.custom:minecraft.drop
+scoreboard objectives add sheep.lose_color_timer dummy
 
 # NOTE(alex): Each team has its own cooldown per flag
 scoreboard objectives add pickup_cooldown.white dummy

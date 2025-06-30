@@ -7,7 +7,7 @@
 # ========================================================================
 
 execute store result storage ctf:temp Args.Index int 1 run scoreboard players get .index temp
-execute store result score .success temp run function ctf:game/try_start_map with storage ctf:temp Args
+execute store result score .success temp run function ctf:game/check_full with storage ctf:temp Args
 data remove storage ctf:temp Args
 
 # NOTE(alex): If we succeeded, we can early out

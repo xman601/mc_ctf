@@ -9,11 +9,8 @@
 $execute if predicate ctf:team1_won_game run function ctf:game/show_match_results {Winners:$(Team1),Losers:$(Team2)}
 $execute if predicate ctf:team2_won_game run function ctf:game/show_match_results {Winners:$(Team2),Losers:$(Team1)}
 
-$tp @e[type=sheep,tag=CTF.IsFlag,nbt={Color:$(Team1SheepColor)b}] 0 -200 0
-$tp @e[type=sheep,tag=CTF.IsFlag,nbt={Color:$(Team2SheepColor)b}] 0 -200 0
-
-$kill @e[type=sheep,tag=CTF.IsFlag,nbt={Color:$(Team1SheepColor)b}]
-$kill @e[type=sheep,tag=CTF.IsFlag,nbt={Color:$(Team2SheepColor)b}]
+$tp @e[type=sheep,tag=CTF.IsFlag,tag=Map.$(Name)] 0 -200 0
+$kill @e[type=sheep,tag=CTF.IsFlag,tag=Map.$(Name)]
 
 $tag @a[team=$(Team1)] add return_to_lobby
 $tag @a[team=$(Team2)] add return_to_lobby

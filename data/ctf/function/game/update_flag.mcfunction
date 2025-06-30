@@ -22,3 +22,4 @@ function ctf:game/update_flag_color {Color:"brown"}
 function ctf:game/update_flag_color {Color:"green"}
 function ctf:game/update_flag_color {Color:"red"}
 function ctf:game/update_flag_color {Color:"black"}
+function ctf:game/update_lose_color_timer

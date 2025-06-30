@@ -6,4 +6,6 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$summon sheep $(x) $(y) $(z) {PersistenceRequired:1b,Invulnerable:1b,DeathLootTable:"minecraft:empty",Color:$(Color)b,Team:"no_hitbox",Tags:["CTF.IsFlag","Map.$(Map)"],attributes:[{id:"minecraft:tempt_range",base:100}]}
+data merge entity @s {Color:0b}
+particle minecraft:cloud ~ ~1 ~ 0 0 0 0.1 10 force
+playsound minecraft:entity.sheep.hurt master @a ~ ~ ~

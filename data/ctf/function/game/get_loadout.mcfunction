@@ -8,11 +8,11 @@
 
 function ctf:player/clear_hotbar
 
-execute if score @s class = .Swordsman class run function ctf:class/swordsman
-execute if score @s class = .Ranger class run function ctf:class/ranger
-execute if score @s class = .Rogue class run function ctf:class/rogue
-execute if score @s class = .Wizard class run function ctf:class/wizard
-execute if score @s class = .BeastTamer class run function ctf:class/beast_tamer
-execute if score @s class = .Spearthrower class run function ctf:class/spearthrower
+execute if score @s class = #swordsman class run function ctf:class/swordsman
+execute if score @s class = #ranger class run function ctf:class/ranger
+execute if score @s class = #rogue class run function ctf:class/rogue
+execute if score @s class = #wizard class run function ctf:class/wizard
+execute if score @s class = #beast_tamer class run function ctf:class/beast_tamer
+execute if score @s class = #spearthrower class run function ctf:class/spearthrower
 
 give @s bread[custom_data={CTF.NoDrop:true,CTF.InfinityBread:true}] 1

@@ -6,6 +6,9 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
+# NOTE(alex): Look for any pending game starts
+execute if score .start_timer temp matches 1.. run function ctf:game/update_start_timer
+
 # NOTE(alex): Handle player death
 execute as @a[scores={death_count=1..}] run function ctf:player/death
 

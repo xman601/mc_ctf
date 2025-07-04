@@ -189,6 +189,9 @@ scoreboard objectives add berserker_potion.cooldown dummy
 scoreboard objectives add berserker_potion.count dummy
 scoreboard objectives add invisibility_potion.cooldown dummy
 scoreboard objectives add invisibility_potion.count dummy
+scoreboard objectives add healing_potion.cooldown dummy
+scoreboard objectives add healing_potion.count dummy
+scoreboard objectives add splash_potion.use minecraft.used:minecraft.splash_potion
 scoreboard objectives add death_count deathCount
 scoreboard objectives add drop minecraft.custom:minecraft.drop
 scoreboard objectives add sheep.lose_color_timer dummy

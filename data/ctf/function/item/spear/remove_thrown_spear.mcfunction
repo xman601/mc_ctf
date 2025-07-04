@@ -7,4 +7,4 @@
 # ========================================================================
 
 scoreboard players reset @s spear.thrown
-advancement revoke @s only ctf:ability/spear/remove_thrown_spear
+advancement revoke @s only ctf:item/spear/remove_thrown_spear

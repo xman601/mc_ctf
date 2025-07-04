@@ -6,5 +6,4 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-scoreboard players set @s wolf_horn.cooldown 140
-advancement revoke @s only ctf:ability/wolf_horn/cooldown
+$give @s splash_potion[potion_contents={potion:"minecraft:healing"},max_stack_size=64,custom_data={CTF.NoDrop:true}] $(count)

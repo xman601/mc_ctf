@@ -6,5 +6,5 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-scoreboard players set @s wolf_horn.cooldown 140
-advancement revoke @s only ctf:ability/wolf_horn/cooldown
+particle block{block_state:"minecraft:redstone_block"} ~ ~1 ~ 0 0 0 1 25 force
+effect give @s poison 10

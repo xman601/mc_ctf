@@ -6,6 +6,9 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
+playsound minecraft:item.goat_horn.sound.1 master @a ~ ~ ~
+function ctf:ability/commanding_horn/start_cooldown
+
 function ctf:ability/commanding_horn/check_team_for_boost {Team:white}
 function ctf:ability/commanding_horn/check_team_for_boost {Team:orange}
 function ctf:ability/commanding_horn/check_team_for_boost {Team:magenta}
@@ -22,5 +25,3 @@ function ctf:ability/commanding_horn/check_team_for_boost {Team:brown}
 function ctf:ability/commanding_horn/check_team_for_boost {Team:green}
 function ctf:ability/commanding_horn/check_team_for_boost {Team:red}
 function ctf:ability/commanding_horn/check_team_for_boost {Team:black}
-
-function ctf:ability/commanding_horn/start_cooldown

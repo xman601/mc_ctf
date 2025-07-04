@@ -1,6 +1,3 @@
 {
-    "values": [
-        "find_looking:internal/load",
-        "ctf:init"
-    ]
+    "values": ["ctf:init"]
 }

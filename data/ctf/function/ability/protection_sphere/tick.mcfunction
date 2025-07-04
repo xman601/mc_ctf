@@ -6,11 +6,9 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-function ctf:player/refill_items_on_respawn
-function ctf:player/remove_bread_tags
-scoreboard players reset @s spear.thrown
+particle minecraft:cloud ~ ~ ~ 0 0 0 0.05 1 force
 
-clear @s
-effect clear @s
+tag @e[type=arrow,distance=..2.5] add safe_arrow
 
-function ctf:game/set_player_spawnpoint_and_tp with storage ctf:world LobbyPos
+execute at @e[type=arrow,tag=!safe_arrow,distance=..5] run particle minecraft:large_smoke ~ ~ ~ 0 0.1 0 0.05 3 force @a
+kill @e[type=arrow,tag=!safe_arrow,distance=..5]

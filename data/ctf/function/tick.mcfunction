@@ -13,7 +13,7 @@ execute if score .start_timer temp matches 1.. run function ctf:game/update_star
 execute as @a[scores={death_count=1..}] run function ctf:player/death
 
 # NOTE(alex): The Beast Tamer's wolves die after a certain number of ticks
-execute as @e[type=wolf,tag=CTF.BeastTamerWolf,scores={beast_tamer_wolf.live_time=0}] at @s run function ctf:ability/beast_tamer_horn/kill_wolf
+execute as @e[type=wolf,tag=CTF.BeastTamerWolf,scores={beast_tamer_wolf.live_time=0}] at @s run function ctf:ability/wolf_horn/kill_wolf
 scoreboard players remove @e[type=wolf,tag=CTF.BeastTamerWolf,scores={beast_tamer_wolf.live_time=1..}] beast_tamer_wolf.live_time 1
 
 # NOTE(alex): Disallow dropping items
@@ -26,6 +26,8 @@ execute as @e[type=text_display,tag=CTF.IsCounter] at @s run function ctf:game/u
 
 # NOTE(alex): Make sure arrows don't ever get picked up
 execute as @e[type=arrow,nbt=!{pickup:2b}] run data merge entity @s {pickup:2b}
+
+execute as @e[tag=CTF.ProtectionSphere] at @s run function ctf:ability/protection_sphere/tick
 
 # NOTE(alex): Update bossbars
 execute store result bossbar ctf:white value if entity @e[type=sheep,tag=CTF.IsFlag,nbt={Color:0b}]

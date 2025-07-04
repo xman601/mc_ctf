@@ -6,11 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-function ctf:player/refill_items_on_respawn
-function ctf:player/remove_bread_tags
-scoreboard players reset @s spear.thrown
+playsound minecraft:entity.breeze.jump master @a ~ ~ ~ 0.5
 
-clear @s
-effect clear @s
-
-function ctf:game/set_player_spawnpoint_and_tp with storage ctf:world LobbyPos
+effect give @s speed 15
+effect give @s resistance 15

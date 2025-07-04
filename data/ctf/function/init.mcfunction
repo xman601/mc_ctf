@@ -176,8 +176,9 @@ scoreboard objectives add shadowstep.active_time dummy
 scoreboard objectives add hunters_eye.cooldown dummy
 scoreboard objectives add hunters_eye.count dummy
 scoreboard objectives add levitation_wand.cooldown dummy
-scoreboard objectives add beast_tamer_horn.cooldown dummy
 scoreboard objectives add beast_tamer_wolf.live_time dummy
+scoreboard objectives add wolf_horn.cooldown dummy
+scoreboard objectives add commanding_horn.cooldown dummy
 scoreboard objectives add spear.bleeding_time dummy
 scoreboard objectives add spear.thrown minecraft.used:minecraft.trident
 scoreboard objectives add bow.use minecraft.used:minecraft.bow

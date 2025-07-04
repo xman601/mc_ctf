@@ -5,6 +5,6 @@
         }
     },
     "rewards": {
-        "function": "ctf:ability/beast_tamer_horn/cooldown"
+        "function": "ctf:ability/wolf_horn/cooldown"
     }
 }

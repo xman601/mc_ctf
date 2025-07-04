@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "CTF.WolfHorn": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ctf:ability/wolf_horn/use"
+  }
+}

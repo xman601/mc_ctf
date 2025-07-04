@@ -159,13 +159,17 @@ function ctf:game/define_class {Class:beast_tamer}
 function ctf:game/define_class {Class:spearthrower}
 
 # NOTE(alex): Ability triggers
-scoreboard objectives add arrow_regen.cooldown dummy
-scoreboard objectives add arrow_regen.count dummy
+scoreboard objectives add arrow.cooldown dummy
+scoreboard objectives add arrow.count dummy
 scoreboard objectives add wind_charge.cooldown dummy
 scoreboard objectives add wind_charge.count dummy
 scoreboard objectives add wind_charge.use minecraft.used:minecraft.wind_charge
+scoreboard objectives add infinity_bread.count dummy
 scoreboard objectives add fire_powder.cooldown dummy
 scoreboard objectives add fire_powder.count dummy
+scoreboard objectives add ender_pearl.use minecraft.used:minecraft.ender_pearl
+scoreboard objectives add ender_pearl.cooldown dummy
+scoreboard objectives add ender_pearl.count dummy
 scoreboard objectives add enhancement_tome.cooldown dummy
 scoreboard objectives add enhancement_tome.count dummy
 scoreboard objectives add diminishment_tome.cooldown dummy
@@ -179,13 +183,10 @@ scoreboard objectives add levitation_wand.cooldown dummy
 scoreboard objectives add beast_tamer_wolf.live_time dummy
 scoreboard objectives add wolf_horn.cooldown dummy
 scoreboard objectives add commanding_horn.cooldown dummy
-scoreboard objectives add spear.bleeding_time dummy
 scoreboard objectives add spear.thrown minecraft.used:minecraft.trident
 scoreboard objectives add bow.use minecraft.used:minecraft.bow
 scoreboard objectives add berserker_potion.cooldown dummy
 scoreboard objectives add berserker_potion.count dummy
-scoreboard objectives add swiftness_potion.cooldown dummy
-scoreboard objectives add swiftness_potion.count dummy
 scoreboard objectives add invisibility_potion.cooldown dummy
 scoreboard objectives add invisibility_potion.count dummy
 scoreboard objectives add death_count deathCount

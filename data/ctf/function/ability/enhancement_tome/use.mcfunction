@@ -6,15 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-particle minecraft:witch ~ ~ ~ 0.1 0.1 0.1 0.05 50 force
+execute store result score .success temp run function ctf:ability/enhancement_tome/find_random_ally
+execute if score .success temp matches 0 run function ctf:ability/enhancement_tome/imbue_random_effect
 
-tag @a[distance=0.1..30] add find_looking.candidate
-function find_looking:find
-tag @a remove find_looking.candidate
-
-execute as @a[tag=find_looking.result] at @s run function ctf:ability/enhancement_tome/imbue_random_effect
-execute unless entity @a[tag=find_looking.result] run function ctf:ability/enhancement_tome/imbue_random_effect
-
-execute if entity @s[gamemode=!creative,gamemode=!spectator] run scoreboard players add @s enhancement_tome.count 1
-execute if entity @s[gamemode=!creative,gamemode=!spectator] unless score @s enhancement_tome.cooldown matches 1.. run function ctf:ability/enhancement_tome/start_cooldown
-advancement revoke @s only ctf:use_enhancement_tome
+advancement revoke @s only ctf:ability/enhancement_tome/use

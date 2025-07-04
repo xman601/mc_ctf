@@ -8,4 +8,4 @@
 
 function ctf:game/drop_all_flags
 scoreboard players reset @s drop
-advancement revoke @s only ctf:drop_item
+advancement revoke @s only ctf:player/drop_item

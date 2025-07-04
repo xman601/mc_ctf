@@ -8,4 +8,4 @@
 
 effect clear @s minecraft:invisibility
 function ctf:game/drop_flag
-advancement revoke @s only ctf:take_damage
+advancement revoke @s only ctf:player/take_damage

@@ -12,10 +12,8 @@ $execute if predicate ctf:team2_won_game run function ctf:game/show_match_result
 $tp @e[type=sheep,tag=CTF.IsFlag,tag=Map.$(Name)] 0 -200 0
 $kill @e[type=sheep,tag=CTF.IsFlag,tag=Map.$(Name)]
 
-$tag @a[team=$(Team1)] add return_to_lobby
-$tag @a[team=$(Team2)] add return_to_lobby
-execute as @a[tag=return_to_lobby] run function ctf:game/return_to_lobby
-tag @a remove return_to_lobby
+$execute as @a[team=$(Team1)] run function ctf:game/return_to_lobby
+$execute as @a[team=$(Team2)] run function ctf:game/return_to_lobby
 
 $team join team1 @a[team=$(Team1)]
 $team join team2 @a[team=$(Team2)]

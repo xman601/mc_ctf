@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "minecraft:player",
+                        "gamemode": [
+                            "adventure"
+                        ]
+                    }
+                },
+                "item": {
+                    "items": "minecraft:bread",
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "CTF.InfinityBread": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "ctf:item/infinity_bread/eat"
+    }
+}

@@ -7,8 +7,6 @@
 # ========================================================================
 
 function ctf:player/refill_items_on_respawn
-function ctf:player/remove_bread_tags
-scoreboard players reset @s spear.thrown
 
 clear @s
 effect clear @s

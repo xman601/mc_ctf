@@ -23,8 +23,4 @@ function ctf:ability/commanding_horn/check_team_for_boost {Team:green}
 function ctf:ability/commanding_horn/check_team_for_boost {Team:red}
 function ctf:ability/commanding_horn/check_team_for_boost {Team:black}
 
-# NOTE(alex): There has to be *some* cooldown just because of the way "using"
-# the goat horn item works. It seems to last for a few ticks, and we don't
-# want to trigger this multiple times.
-scoreboard players set @s commanding_horn.cooldown 140
-advancement revoke @s only ctf:commanding_horn_cooldown
+function ctf:ability/commanding_horn/start_cooldown

@@ -9,10 +9,6 @@
 # TODO(alex): Delete this file once we have migrated to using only the join_*
 # functions to make the player equip the correctly colored armor.
 
-# TODO(alex): Instead, store the armor color in the data for the level, then
-# we can just query it like Team1ArmorColor and Team2ArmorColor instead of
-# running this switch statement for every player.
-
 execute if entity @s[team=white] run return run function ctf:player/equip_colored_armor {ArmorColor:16383998}
 execute if entity @s[team=orange] run return run function ctf:player/equip_colored_armor {ArmorColor:16351261}
 execute if entity @s[team=magenta] run return run function ctf:player/equip_colored_armor {ArmorColor:13061821}

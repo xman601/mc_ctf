@@ -149,6 +149,7 @@ bossbar set ctf:black max 6
 scoreboard objectives add temp dummy
 scoreboard objectives add gid dummy
 scoreboard objectives add class dummy
+scoreboard objectives add mana dummy
 
 scoreboard players reset #next_class class
 function ctf:game/define_class {Class:swordsman}
@@ -180,6 +181,7 @@ scoreboard objectives add shadowstep.active_time dummy
 scoreboard objectives add hunters_eye.cooldown dummy
 scoreboard objectives add hunters_eye.count dummy
 scoreboard objectives add levitation_wand.cooldown dummy
+scoreboard objectives add levitation_wand.active dummy
 scoreboard objectives add beast_tamer_wolf.live_time dummy
 scoreboard objectives add wolf_horn.cooldown dummy
 scoreboard objectives add commanding_horn.cooldown dummy

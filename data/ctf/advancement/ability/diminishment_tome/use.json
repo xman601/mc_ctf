@@ -1,12 +1,12 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:consume_item",
+            "trigger": "minecraft:using_item",
             "conditions": {
                 "item": {
                     "predicates": {
                         "minecraft:custom_data": {
-                            "CTF.DiminishmentTome": true
+                            "diminishment_tome": true
                         }
                     }
                 }

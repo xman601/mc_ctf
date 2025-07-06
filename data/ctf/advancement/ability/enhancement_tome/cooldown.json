@@ -8,7 +8,7 @@
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                            "diminishment_tome.cooldown": {
+                            "enhancement_tome.cooldown": {
                                 "min": 1
                             }
                         }
@@ -18,6 +18,6 @@
         }
     },
     "rewards": {
-        "function": "ctf:item/diminishment_tome/update_cooldown"
+        "function": "ctf:ability/enhancement_tome/update_cooldown"
     }
 }

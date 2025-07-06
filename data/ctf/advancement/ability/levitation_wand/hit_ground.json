@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "stepping_on": {
+                                    "block": {
+                                        "blocks": "#minecraft:air"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "levitation_wand.active": 1
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "ctf:ability/levitation_wand/hit_ground"
+    }
+}

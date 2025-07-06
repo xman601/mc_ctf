@@ -8,4 +8,4 @@
 
 playsound minecraft:entity.allay.hurt master @a ~ ~ ~
 particle minecraft:angry_villager ~ ~ ~ 1 0 1 1 5 force
-tellraw @s [{"text":"Not enough mana! ","color":"red"},{"text":"You need at least ","color":"white"},{"text":"8","color":"aqua"},{"text":" mana, but you have ","color":"white"},{"score":{"name":"@s","objective":"mana"},"color":"red"}]
+tellraw @s [{"text":"Not enough mana! ","color":"red"},{"text":"You need at least ","color":"white"},{"text":"10","color":"aqua"},{"text":" mana, but you have ","color":"white"},{"score":{"name":"@s","objective":"mana"},"color":"red"}]

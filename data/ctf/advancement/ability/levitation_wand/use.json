@@ -1,19 +1,19 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:using_item",
-      "conditions": {
-        "item": {
-          "predicates": {
-            "minecraft:custom_data": {
-              "CTF.LevitationWand": true
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "levitation_wand": true
+                        }
+                    }
+                }
             }
-          }
         }
-      }
+    },
+    "rewards": {
+        "function": "ctf:ability/levitation_wand/use"
     }
-  },
-  "rewards": {
-    "function": "ctf:ability/levitation_wand/use"
-  }
 }

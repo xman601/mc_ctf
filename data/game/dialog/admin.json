@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:dialog_list",
+    "title": {
+        "text": "Admin Menu",
+        "type": "text",
+        "color": "#ffffff",
+        "bold": false
+    },
+    "columns": 1,
+    "dialogs": [
+        "game:adminmap",
+        "game:map",
+        "game:class"
+    ]
+}

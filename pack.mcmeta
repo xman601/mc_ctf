@@ -1,6 +1,6 @@
 {
-    "pack": {
-        "description": "Capture the Flag, by Alex",
-        "pack_format": 61
-    }
+  "pack": {
+    "description": "This is a datapack for a Minecraft game menu for CTF",
+    "pack_format": 80
+  }
 }

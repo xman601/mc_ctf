@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:confirmation",
+  "title": "Beast Tamer",
+  "external_title": "Beast Timer Info",
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:stone_sword",
+        "components": {
+          "minecraft:item_name": "Shepherd's Rod",
+          "minecraft:lore": [
+            {"text":"Typically used to calm beasts... but excellent for cracking skulls","color":"gray", "italic":false}
+          ],
+          "!minecraft:custom_data": {},
+          "minecraft:item_model": "minecraft:wooden_hoe"
+        }
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:goat_horn",
+        "components": {
+          "minecraft:item_name": {"text":"Wolf Horn"},
+          "minecraft:lore": [
+            {"text":"Part instrument, part ‘surprise wolf attack’ device","color":"gray","italic":false}
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:goat_horn",
+        "components": {
+          "minecraft:item_name": {"text":"Commanding Horn","color":"aqua"},
+          "minecraft:lore": [
+            {"text":"Somehow even just holding it makes you want to charge into battle...","color":"gray","italic":false},
+            {"text":""},
+            {"text":"When Used:","color":"gray","italic":false},
+            {"text":" Gives nearby allies a boost","color":"blue","italic":false},
+            {"text":" 20s Cooldown","color":"blue","italic":false}
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:splash_potion",
+        "components": {
+          "minecraft:potion_contents": "minecraft:healing",
+          "minecraft:max_stack_size": 64
+        },
+        "count": 3
+      }
+    }
+  ],
+  "yes": {
+    "label": "Choose",
+    "action": {
+      "type": "run_command",
+      "command": "trigger class 1"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "show_dialog",
+      "dialog": "game:class"
+    }
+  }
+}

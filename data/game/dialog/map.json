@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Maps",
+  "external_title": "Map Selector",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Vote for a Map to play your next game on"
+  },
+  "inputs": [],
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Castle Map",
+      "action": {
+        "type": "run_command",
+        "command": "trigger maps add 1"
+      }
+    },
+    {
+      "label": "Cave Map",
+      "action": {
+        "type": "run_command",
+        "command": "trigger maps add 2"
+      }
+    },
+    {
+      "label": "Pirate Map",
+      "action": {
+        "type": "run_command",
+        "command": "trigger maps add 3"
+      }
+    },
+    {
+      "label": "Tree Map",
+      "action": {
+        "type": "run_command",
+        "command": "trigger maps add 4"
+      }
+    },
+    {
+      "label": "1v1 Map",
+      "action": {
+        "type": "run_command",
+        "command": "trigger maps add 5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Classes",
+  "external_title": "Class Selector",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Choose a Class to play as"
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": "Beast Tamer",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class add 1"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "game:classes/beasttamer"
+      }
+    },
+    {
+      "label": "Guardian",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class add 2"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "game:classes/guardian"
+      }
+    },
+    {
+      "label": "Ranger",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class add 3"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "game:classes/ranger"
+      }
+    },
+    {
+      "label": "Rogue",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class add 4"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "game:classes/rogue"
+      }
+    },
+    {
+      "label": "Spear Thrower",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class add 5"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "game:classes/spearthrower"
+      }
+    },
+    {
+      "label": "Swordsman",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class add 6"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "game:classes/swordsman"
+      }
+    },
+    {
+      "label": "Wizard",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class add 7"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "game:classes/wizard"
+      }
+    }
+  ]
+}

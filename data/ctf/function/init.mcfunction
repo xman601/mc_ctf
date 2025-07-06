@@ -219,3 +219,4 @@ scoreboard objectives add pickup_cooldown.black dummy
 
 # NOTE(alex): This checks all games for a win every second!
 schedule function ctf:game/list_iterate 1s replace
+schedule function ctf:game/regen_mana 1s replace

@@ -6,6 +6,9 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
+# NOTE(alex): Display the mana bar to all players
+execute as @a[gamemode=adventure] run function ctf:game/display_mana_bar
+
 # NOTE(alex): Look for any pending game starts
 execute if score .start_timer temp matches 1.. run function ctf:game/update_start_timer
 

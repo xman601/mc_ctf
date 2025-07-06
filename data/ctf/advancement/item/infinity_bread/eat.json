@@ -15,7 +15,7 @@
                     "items": "minecraft:bread",
                     "predicates": {
                         "minecraft:custom_data": {
-                            "CTF.InfinityBread": true
+                            "infinity_bread": true
                         }
                     }
                 }

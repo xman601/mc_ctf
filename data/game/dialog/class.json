@@ -112,6 +112,19 @@
         "type": "show_dialog",
         "dialog": "game:classes/wizard"
       }
+    },
+    {
+      "label": "Main Menu",
+      "width": 100,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "game:main"
+      }
     }
-  ]
+  ],
+  "inputs": [],
+  "exit_action": {
+    "label": "Exit",
+    "width": 40
+  }
 }

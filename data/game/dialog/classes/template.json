@@ -1,7 +1,7 @@
 {
   "type": "minecraft:multi_action",
-  "title": "Ranger",
-  "external_title": "Ranger Info",
+  "title": "template",
+  "external_title": "template",
   "body": [
     {
       "type": "minecraft:plain_message",
@@ -104,7 +104,7 @@
       "width": 100,
       "action": {
         "type": "run_command",
-        "command": "trigger class add 3"
+        "command": "trigger class add 1"
       }
     },
     {

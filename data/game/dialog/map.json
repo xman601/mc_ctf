@@ -6,7 +6,6 @@
     "type": "minecraft:plain_message",
     "contents": "Vote for a Map to play your next game on"
   },
-  "inputs": [],
   "columns": 1,
   "actions": [
     {
@@ -43,6 +42,19 @@
         "type": "run_command",
         "command": "trigger maps add 5"
       }
+    },
+    {
+      "label": "Main Menu",
+      "width": 100,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "game:main"
+      }
     }
-  ]
+  ],
+  "inputs": [],
+  "exit_action": {
+    "label": "Exit",
+    "width": 40
+  }
 }

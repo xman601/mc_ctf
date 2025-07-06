@@ -1,12 +1,12 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:consume_item",
+            "trigger": "minecraft:using_item",
             "conditions": {
                 "item": {
                     "predicates": {
                         "minecraft:custom_data": {
-                            "CTF.HuntersEye": true
+                            "hunters_eye": true
                         }
                     }
                 }

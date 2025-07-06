@@ -18,6 +18,6 @@
         }
     },
     "rewards": {
-        "function": "ctf:item/shadowstep/update_cooldown"
+        "function": "ctf:ability/shadowstep/update_cooldown"
     }
 }

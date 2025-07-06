@@ -6,7 +6,7 @@
                 "item": {
                     "predicates": {
                         "minecraft:custom_data": {
-                            "CTF.CommandingHorn": true
+                            "commanding_horn": true
                         }
                     }
                 }

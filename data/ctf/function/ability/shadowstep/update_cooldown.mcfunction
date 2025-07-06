@@ -6,5 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-scoreboard players set @s wolf_horn.cooldown 40
-advancement revoke @s only ctf:ability/wolf_horn/cooldown
+scoreboard players remove @s shadowstep.cooldown 1
+execute if score @s shadowstep.cooldown matches 1.. run return run advancement revoke @s only ctf:ability/shadowstep/cooldown
+scoreboard players reset @s shadowstep.cooldown
+advancement revoke @s only ctf:ability/shadowstep/use

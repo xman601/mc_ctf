@@ -6,5 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-scoreboard players set @s wolf_horn.cooldown 40
-advancement revoke @s only ctf:ability/wolf_horn/cooldown
+scoreboard players remove @s hunters_eye.cooldown 1
+execute if score @s hunters_eye.cooldown matches 1.. run return run advancement revoke @s only ctf:ability/hunters_eye/cooldown
+scoreboard players reset @s hunters_eye.cooldown
+advancement revoke @s only ctf:ability/hunters_eye/use

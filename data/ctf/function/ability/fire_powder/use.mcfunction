@@ -8,7 +8,7 @@
 
 function ctf:ability/fire_powder/start_cooldown
 
-execute unless score @s mana matches 8.. run return run function ctf:ability/fire_powder/fail
+execute unless score @s mana matches 6.. run return run function ctf:ability/fire_powder/fail
 
 scoreboard players remove @s mana 6
 

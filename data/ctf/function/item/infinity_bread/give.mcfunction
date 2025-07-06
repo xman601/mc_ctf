@@ -6,4 +6,4 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$give @s bread[custom_data={CTF.NoDrop:true,infinity_bread:true}] $(count)
+$give @s bread[custom_data={no_drop:true,infinity_bread:true}] $(count)

@@ -6,7 +6,7 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-# NOTE(alex): This function is run as any item with the CTF.NoDrop tag,
+# NOTE(alex): This function is run as any item with the no_drop tag,
 # and will teleport the item back to its owner (therefore preventing it
 # from being dropped).
 

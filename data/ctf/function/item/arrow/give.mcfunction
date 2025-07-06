@@ -6,4 +6,4 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-$give @s arrow[custom_data={CTF.NoDrop:true}] $(count)
+$give @s arrow[custom_data={no_drop:true}] $(count)

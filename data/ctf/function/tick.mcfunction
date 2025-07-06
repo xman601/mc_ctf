@@ -17,7 +17,7 @@ execute as @e[type=wolf,tag=CTF.BeastTamerWolf,scores={beast_tamer_wolf.live_tim
 scoreboard players remove @e[type=wolf,tag=CTF.BeastTamerWolf,scores={beast_tamer_wolf.live_time=1..}] beast_tamer_wolf.live_time 1
 
 # NOTE(alex): Disallow dropping items
-execute as @e[type=item] if items entity @s contents *[minecraft:custom_data~{CTF.NoDrop:true}] at @s run function ctf:player/tp_item_to_owner
+execute as @e[type=item] if items entity @s contents *[minecraft:custom_data~{no_drop:true}] at @s run function ctf:player/tp_item_to_owner
 
 # NOTE(alex): Pickup and teleport flags
 execute as @e[type=sheep,tag=CTF.IsFlag] at @s run function ctf:game/update_flag

@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Maps",
+  "external_title": "Map Selector",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Vote for a Map to play your next ctf on"
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Castle Map",
+      "action": {
+        "type": "run_command",
+        "command": "trigger maps set 1"
+      }
+    },
+    {
+      "label": "Cave Map",
+      "action": {
+        "type": "run_command",
+        "command": "trigger maps set 2"
+      }
+    },
+    {
+      "label": "Pirate Map",
+      "action": {
+        "type": "run_command",
+        "command": "trigger maps set 3"
+      }
+    },
+    {
+      "label": "Tree Map",
+      "action": {
+        "type": "run_command",
+        "command": "trigger maps set 4"
+      }
+    },
+    {
+      "label": "1v1 Map",
+      "action": {
+        "type": "run_command",
+        "command": "trigger maps set 5"
+      }
+    },
+    {
+      "label": "Main Menu",
+      "width": 80,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "ctf:main"
+      }
+    }
+  ],
+  "inputs": [],
+  "exit_action": {
+    "label": "Exit",
+    "width": 40
+  }
+}

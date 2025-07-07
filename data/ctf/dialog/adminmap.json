@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Admin Map",
+  "external_title": "Map Admin Selector",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Choose a Map to teleport to"
+  },
+  "inputs": [],
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Lobby",
+      "action": {
+        "type": "run_command",
+        "command": "tp @p 0 96 0 90 0"
+      }
+    },
+    {
+      "label": "Training Arena",
+      "action": {
+        "type": "run_command",
+        "command": "tp @p -500 101 0 0 0"
+      }
+    },
+    {
+      "label": "Castle Map",
+      "action": {
+        "type": "run_command",
+        "command": "tp @p 1003 115 -20 0 0"
+      }
+    },
+    {
+      "label": "Cave Map",
+      "action": {
+        "type": "run_command",
+        "command": "tp @p -1003 18 -1044 0 0"
+      }
+    },
+    {
+      "label": "Pirate Map",
+      "action": {
+        "type": "run_command",
+        "command": "tp @p 1000 -7 -1000 0 0"
+      }
+    },
+    {
+      "label": "Tree Map",
+      "action": {
+        "type": "run_command",
+        "command": "tp @p -1010 127 -510 -37 0"
+      }
+    },
+    {
+      "label": "1v1 Map",
+      "action": {
+        "type": "run_command",
+        "command": "tp @p x x x"
+      }
+    }
+  ]
+}

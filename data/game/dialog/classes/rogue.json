@@ -1,6 +1,6 @@
 {
   "type": "minecraft:multi_action",
-  "title": "Rogue Items",
+  "title": "Rogue",
   "external_title": "Rogue Info",
   "body": [
     {
@@ -15,8 +15,7 @@
         "id": "minecraft:iron_sword",
         "components": {
           "minecraft:item_name": {
-            "text": "Poison Dagger",
-            "color": "aqua"
+            "text": "Poison Dagger"
           },
           "minecraft:lore": [
             {"text":"Where did you even get the poison?","color":"gray","italic":false},

@@ -1,43 +1,31 @@
 {
   "type": "minecraft:multi_action",
-  "title": "template",
-  "external_title": "template",
+  "title": "Template Class",
+  "external_title": "Template Class Items",
   "body": [
     {
       "type": "minecraft:plain_message",
       "contents": [
-        {"text": "The Ranger is a class that excels at striking from a distance with precision and agility, using their mastery of the wild to outmaneuver enemies and track targets across any terrain."}
+        {"text": "The Beast Tamer is a class that excels at controlling the battlefield with their animal companions and unique items."}
       ]
     },
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:bow",
+        "id": "minecraft:stone_sword",
         "components": {
-          "minecraft:item_name": {
-            "text": "Multibow",
-            "color": "aqua"
-          },
+          "minecraft:item_name": "Shepherd's Rod",
           "minecraft:lore": [
-            {
-              "text": "Because accuracy is overrated",
-              "color": "gray",
-              "italic": false
-            },
-            {
-              "text": ""
-            },
-            {
-              "text": "When Fired:",
-              "color": "gray",
-              "italic": false
-            },
-            {
-              "text": " Launches 5x Arrows",
-              "color": "blue",
-              "italic": false
-            }
+            {"text":"Typically used to calm beasts... but excellent for cracking skulls","color":"gray", "italic":false}
           ],
+          "!minecraft:custom_data": {},
+          "minecraft:custom_data": {
+            "Rod": {}
+          },
+          "minecraft:enchantments": {
+            "minecraft:sweeping_edge": 3
+          },
+          "!minecraft:enchantments": {},
           "minecraft:enchantment_glint_override": false
         }
       }
@@ -45,50 +33,42 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:bow",
+        "id": "minecraft:goat_horn",
         "components": {
-          "minecraft:item_name": {
-            "text": "Flinger",
-            "color": "aqua"
-          },
+          "minecraft:item_name": {"text":"Wolf Horn"},
           "minecraft:lore": [
-            {"text":"Because companionship is overrated","color":"gray","italic":false},
-            {"text":""},{"text":"When Fired:","color":"gray","italic":false},
-            {"text":" Arrows send target flying","color":"blue","italic":false},
-            {"text":" Arrows pierce shields","color":"blue","italic":false}
+            {"text":"Part instrument, part ‘surprise wolf attack’ device","color":"gray","italic":false}
           ],
-          "minecraft:enchantment_glint_override": false
+          "!minecraft:instrument": {}
         }
       }
     },
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:ender_eye",
+        "id": "minecraft:goat_horn",
         "components": {
-          "minecraft:item_name": {
-            "text": "Hunter's Eye",
-            "color": "aqua"
-          },
+          "minecraft:item_name": {"text":"Commanding Horn","color":"aqua"},
           "minecraft:lore": [
-            {"text":"Ever feel like someone's watching you?","color":"gray","italic":false},
+            {"text":"Somehow even just holding it makes you want to charge into battle...","color":"gray","italic":false},
             {"text":""},
             {"text":"When Used:","color":"gray","italic":false},
-            {"text":" Reveals players and flags within a 50 block radius","color":"blue","italic":false}
+            {"text":" Gives nearby allies a boost","color":"blue","italic":false},
+            {"text":" 20s Cooldown","color":"blue","italic":false}
           ],
-          "minecraft:item_model": "minecraft:ender_eye"
-        },
-        "!minecraft:jukebox_playable": {}
+          "!minecraft:instrument": {}
+        }
       }
     },
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:arrow",
+        "id": "minecraft:splash_potion",
         "components": {
+          "minecraft:potion_contents": "minecraft:healing",
           "minecraft:max_stack_size": 64
         },
-        "count": 10
+        "count": 3
       }
     }
   ],

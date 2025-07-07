@@ -12,7 +12,7 @@
       "label": "Beast Tamer",
       "action": {
         "type": "run_command",
-        "command": "trigger class add 1"
+        "command": "trigger class set 1"
       }
     },
     {
@@ -27,7 +27,7 @@
       "label": "Guardian",
       "action": {
         "type": "run_command",
-        "command": "trigger class add 2"
+        "command": "trigger class set 2"
       }
     },
     {
@@ -42,7 +42,7 @@
       "label": "Ranger",
       "action": {
         "type": "run_command",
-        "command": "trigger class add 3"
+        "command": "trigger class set 3"
       }
     },
     {
@@ -57,7 +57,7 @@
       "label": "Rogue",
       "action": {
         "type": "run_command",
-        "command": "trigger class add 4"
+        "command": "trigger class set 4"
       }
     },
     {
@@ -72,7 +72,7 @@
       "label": "Spear Thrower",
       "action": {
         "type": "run_command",
-        "command": "trigger class add 5"
+        "command": "trigger class set 5"
       }
     },
     {
@@ -87,7 +87,7 @@
       "label": "Swordsman",
       "action": {
         "type": "run_command",
-        "command": "trigger class add 6"
+        "command": "trigger class set 6"
       }
     },
     {
@@ -102,7 +102,7 @@
       "label": "Wizard",
       "action": {
         "type": "run_command",
-        "command": "trigger class add 7"
+        "command": "trigger class set 7"
       }
     },
     {
@@ -115,7 +115,7 @@
     },
     {
       "label": "Main Menu",
-      "width": 100,
+      "width": 80,
       "action": {
         "type": "show_dialog",
         "dialog": "game:main"

@@ -45,7 +45,7 @@
     },
     {
       "label": "Main Menu",
-      "width": 100,
+      "width": 80,
       "action": {
         "type": "show_dialog",
         "dialog": "game:main"

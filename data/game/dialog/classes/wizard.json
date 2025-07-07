@@ -1,6 +1,6 @@
 {
   "type": "minecraft:multi_action",
-  "title": "Wizard Items",
+  "title": "Wizard",
   "external_title": "Wizard Info",
   "body": [
     {
@@ -48,7 +48,7 @@
               "italic": false
             }
           ],
-          "minecraft:enchantment_glint_override": true,
+          "minecraft:enchantment_glint_override": false,
           "minecraft:consumable": {
             "consume_seconds": 0,
             "animation": "eat",
@@ -99,7 +99,7 @@
               "italic": false
             }
           ],
-          "minecraft:enchantment_glint_override": true,
+          "minecraft:enchantment_glint_override": false,
           "minecraft:consumable": {
             "consume_seconds": 1000000000,
             "animation": "spear"

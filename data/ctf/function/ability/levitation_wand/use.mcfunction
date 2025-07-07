@@ -6,6 +6,9 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
+# TODO(alex): Fall damage still occurs if you are on the ground when you
+# activate the Levitation Wand!
+
 function ctf:ability/levitation_wand/start_cooldown
 
 execute unless score @s mana matches 10.. run return run function ctf:ability/levitation_wand/fail

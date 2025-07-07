@@ -13,4 +13,4 @@
 item replace entity @s hotbar.0 with iron_sword[unbreakable={show_in_tooltip:false},custom_data={no_drop:true}] 1
 item replace entity @s hotbar.1 with crossbow[item_name='{"text":"Crossbow","color":"white"}',unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:quick_charge":2,"minecraft:piercing":1},show_in_tooltip:false},enchantment_glint_override=false,custom_data={no_drop:true}] 1
 item replace entity @s hotbar.2 with potion[custom_name='{"text":"Berserker Potion","italic":false}',potion_contents={potion:"minecraft:water",custom_color:1908001,custom_effects:[{id:"minecraft:strength",amplifier:0,duration:200,show_particles:1b,show_icon:1b},{id:"minecraft:speed",amplifier:1,duration:200,show_particles:1b,show_icon:1b},{id:"minecraft:hunger",amplifier:2,duration:300}]},!use_remainder,custom_data={no_drop:true,CTF.BerserkerPotion:true}] 1
-item replace entity @s hotbar.3 with arrow[custom_data={no_drop:true}] 5
+item replace entity @s hotbar.3 with arrow[intangible_projectile={},custom_data={no_drop:true}] 5

@@ -7,7 +7,7 @@
     },
     "columns": 1,
     "dialogs": [
-        "game:map",
-        "game:class"
+        "ctf:map",
+        "ctf:class"
     ]
 }

@@ -4,7 +4,7 @@
   "external_title": "Map Selector",
   "body": {
     "type": "minecraft:plain_message",
-    "contents": "Vote for a Map to play your next game on"
+    "contents": "Vote for a Map to play your next ctf on"
   },
   "columns": 1,
   "actions": [
@@ -48,7 +48,7 @@
       "width": 80,
       "action": {
         "type": "show_dialog",
-        "dialog": "game:main"
+        "dialog": "ctf:main"
       }
     }
   ],

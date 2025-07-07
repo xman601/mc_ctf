@@ -1,7 +1,7 @@
 {
   "type": "minecraft:multi_action",
-  "title": "Beast Tamer",
-  "external_title": "Beast Timer Info",
+  "title": "Template Class",
+  "external_title": "Template Class Items",
   "body": [
     {
       "type": "minecraft:plain_message",
@@ -19,7 +19,9 @@
             {"text":"Typically used to calm beasts... but excellent for cracking skulls","color":"gray", "italic":false}
           ],
           "!minecraft:custom_data": {},
-          "minecraft:item_model": "minecraft:wooden_hoe",
+          "minecraft:custom_data": {
+            "Rod": {}
+          },
           "minecraft:enchantments": {
             "minecraft:sweeping_edge": 3
           },
@@ -90,7 +92,7 @@
       "width": 100,
       "action": {
         "type": "show_dialog",
-        "dialog": "game:class"
+        "dialog": "ctf:class"
       }
     }
   ]

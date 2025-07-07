@@ -112,7 +112,7 @@
       "width": 100,
       "action": {
         "type": "show_dialog",
-        "dialog": "game:class"
+        "dialog": "ctf:class"
       }
     }
   ]

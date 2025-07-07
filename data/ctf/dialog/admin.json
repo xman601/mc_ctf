@@ -8,8 +8,8 @@
     },
     "columns": 1,
     "dialogs": [
-        "game:adminmap",
-        "game:map",
-        "game:class"
+        "ctf:adminmap",
+        "ctf:map",
+        "ctf:class"
     ]
 }

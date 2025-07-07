@@ -20,7 +20,7 @@
       "width": 30,
       "action": {
         "type": "show_dialog",
-        "dialog": "game:classes/beasttamer"
+        "dialog": "ctf:classes/beasttamer"
       }
     },
     {
@@ -35,7 +35,7 @@
       "width": 30,
       "action": {
         "type": "show_dialog",
-        "dialog": "game:classes/guardian"
+        "dialog": "ctf:classes/guardian"
       }
     },
     {
@@ -50,7 +50,7 @@
       "width": 30,
       "action": {
         "type": "show_dialog",
-        "dialog": "game:classes/ranger"
+        "dialog": "ctf:classes/ranger"
       }
     },
     {
@@ -65,7 +65,7 @@
       "width": 30,
       "action": {
         "type": "show_dialog",
-        "dialog": "game:classes/rogue"
+        "dialog": "ctf:classes/rogue"
       }
     },
     {
@@ -80,7 +80,7 @@
       "width": 30,
       "action": {
         "type": "show_dialog",
-        "dialog": "game:classes/spearthrower"
+        "dialog": "ctf:classes/spearthrower"
       }
     },
     {
@@ -95,7 +95,7 @@
       "width": 30,
       "action": {
         "type": "show_dialog",
-        "dialog": "game:classes/swordsman"
+        "dialog": "ctf:classes/swordsman"
       }
     },
     {
@@ -110,7 +110,7 @@
       "width": 30,
       "action": {
         "type": "show_dialog",
-        "dialog": "game:classes/wizard"
+        "dialog": "ctf:classes/wizard"
       }
     },
     {
@@ -118,7 +118,7 @@
       "width": 80,
       "action": {
         "type": "show_dialog",
-        "dialog": "game:main"
+        "dialog": "ctf:main"
       }
     }
   ],

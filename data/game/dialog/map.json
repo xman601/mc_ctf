@@ -12,35 +12,35 @@
       "label": "Castle Map",
       "action": {
         "type": "run_command",
-        "command": "trigger maps add 1"
+        "command": "trigger maps set 1"
       }
     },
     {
       "label": "Cave Map",
       "action": {
         "type": "run_command",
-        "command": "trigger maps add 2"
+        "command": "trigger maps set 2"
       }
     },
     {
       "label": "Pirate Map",
       "action": {
         "type": "run_command",
-        "command": "trigger maps add 3"
+        "command": "trigger maps set 3"
       }
     },
     {
       "label": "Tree Map",
       "action": {
         "type": "run_command",
-        "command": "trigger maps add 4"
+        "command": "trigger maps set 4"
       }
     },
     {
       "label": "1v1 Map",
       "action": {
         "type": "run_command",
-        "command": "trigger maps add 5"
+        "command": "trigger maps set 5"
       }
     },
     {

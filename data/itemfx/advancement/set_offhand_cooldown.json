@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "offhand": {
+                            "predicates": {
+                                "minecraft:custom_data": {
+                                    "mana_cost": {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "itemfx:set_offhand_cooldown"
+    }
+}

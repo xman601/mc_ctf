@@ -16,4 +16,4 @@ execute if score @s class = #beast_tamer class run function ctf:class/beast_tame
 execute if score @s class = #spearthrower class run function ctf:class/spearthrower
 
 give @s wind_charge[custom_data={no_drop:true}] 5
-give @s bread[custom_data={no_drop:true,infinity_bread:true}] 1
+give @s bread[custom_data={replacement:{modifier:"ctf:infinity_bread"}}] 1

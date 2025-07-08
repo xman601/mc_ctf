@@ -1,0 +1,45 @@
+{
+    "description": "Poison Tip",
+    "supported_items": "#minecraft:enchantable/sword",
+    "weight": 1,
+    "max_level": 3,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "hand"
+    ],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "requirements": {
+                    "condition": "minecraft:random_chance",
+                    "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 0.08,
+                            "per_level_above_first": 0.04
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:apply_mob_effect",
+                    "to_apply": "minecraft:poison",
+                    "min_duration": 7,
+                    "max_duration": 14,
+                    "min_amplifier": 0,
+                    "max_amplifier": 0
+                },
+                "enchanted": "attacker",
+                "affected": "victim"
+            }
+        ]
+    }
+}

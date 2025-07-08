@@ -6,12 +6,6 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
-function ctf:ability/commanding_horn/start_cooldown
-
-execute unless score @s mana matches 8.. run return run function ctf:ability/commanding_horn/fail
-
-scoreboard players remove @s mana 8
-
 playsound minecraft:item.goat_horn.sound.1 master @a ~ ~ ~
 
 function ctf:ability/commanding_horn/check_team_for_boost {Team:white}

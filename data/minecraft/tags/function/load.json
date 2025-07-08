@@ -1,3 +1,6 @@
 {
-    "values": ["ctf:init"]
+    "values": [
+        "mana:init",
+        "ctf:init"
+    ]
 }

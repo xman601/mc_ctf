@@ -1,0 +1,44 @@
+{
+    "function": "minecraft:set_components",
+    "components": {
+        "minecraft:item_model": "minecraft:ender_eye",
+        "minecraft:item_name": "Hunter's Eye",
+        "minecraft:lore": [
+            {
+                "text": "Ever feel like someone's watching you?",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "minecraft:custom_data": {
+            "command": {
+                "run": "function ctf:ability/hunters_eye/use"
+            },
+            "mana_cost": {
+                "value": 20
+            },
+            "no_drop": true
+        },
+        "minecraft:use_cooldown": {
+            "seconds": 30
+        },
+        "minecraft:consumable": {
+            "consume_seconds": 0,
+            "animation": "none",
+            "sound": "intentionally_empty",
+            "has_consume_particles": false
+        },
+        "minecraft:use_remainder": {
+            "id": "minecraft:music_disc_chirp",
+            "components": {
+                "minecraft:item_model": "minecraft:ender_eye",
+                "minecraft:custom_data": {
+                    "replacement": {
+                        "modifier": "ctf:hunters_eye"
+                    }
+                }
+            }
+        },
+        "!minecraft:jukebox_playable": {}
+    }
+}

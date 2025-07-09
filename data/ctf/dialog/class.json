@@ -1,0 +1,130 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Classes",
+  "external_title": "Class Selector",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Choose a Class to play as"
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": "Beast Tamer",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class set 1"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "ctf:classes/beasttamer"
+      }
+    },
+    {
+      "label": "Guardian",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class set 2"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "ctf:classes/guardian"
+      }
+    },
+    {
+      "label": "Ranger",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class set 3"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "ctf:classes/ranger"
+      }
+    },
+    {
+      "label": "Rogue",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class set 4"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "ctf:classes/rogue"
+      }
+    },
+    {
+      "label": "Spear Thrower",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class set 5"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "ctf:classes/spearthrower"
+      }
+    },
+    {
+      "label": "Swordsman",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class set 6"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "ctf:classes/swordsman"
+      }
+    },
+    {
+      "label": "Wizard",
+      "action": {
+        "type": "run_command",
+        "command": "trigger class set 7"
+      }
+    },
+    {
+      "label": "Info",
+      "width": 30,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "ctf:classes/wizard"
+      }
+    },
+    {
+      "label": "Main Menu",
+      "width": 80,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "ctf:main"
+      }
+    }
+  ],
+  "inputs": [],
+  "exit_action": {
+    "label": "Exit",
+    "width": 40
+  }
+}

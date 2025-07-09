@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:dialog_list",
+    "title": {
+        "text": "Main Menu",
+        "type": "text",
+        "color": "#ffffff"
+    },
+    "columns": 1,
+    "dialogs": [
+        "ctf:map",
+        "ctf:class"
+    ]
+}

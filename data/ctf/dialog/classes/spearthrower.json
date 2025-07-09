@@ -1,0 +1,129 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Spear Thrower",
+  "external_title": "Spear Thrower Info",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "The Spear Thrower is a ranged warrior that fights with deadly precision and high-impact tools."
+        }
+      ]
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:trident",
+        "components": {
+          "minecraft:item_name": {
+            "text": "Spear",
+            "color": "aqua"
+          },
+          "minecraft:lore": [
+            {
+              "text": "Throw it... see what happens",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          "minecraft:enchantments": {
+            "minecraft:loyalty": 3
+          },
+          "minecraft:enchantment_glint_override": false,
+          "!minecraft:enchantments": {},
+          "minecraft:unbreakable": {
+            "show_in_tooltip": false
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:music_disc_5",
+        "components": {
+          "!minecraft:jukebox_playable": {},
+          "minecraft:item_model": "minecraft:breeze_rod",
+          "minecraft:item_name": {
+            "text": "Gust Stick",
+            "color": "aqua"
+          },
+          "minecraft:lore": [
+            {
+              "text": "The breeze converges on your opponent",
+              "color": "gray",
+              "italic": false
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": "When Used:",
+              "color": "gray",
+              "italic": false
+            },
+            {
+              "text": " Sends your target flying back",
+              "color": "blue",
+              "italic": false
+            }
+          ],
+          "minecraft:enchantments": {
+            "minecraft:knockback": 2
+          },
+          "!minecraft:enchantments": {},
+          "minecraft:enchantment_glint_override": false
+        }
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:potion",
+        "components": {
+          "!minecraft:use_remainder": {},
+          "minecraft:potion_contents": {
+            "potion": "minecraft:turtle_master"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:potion",
+        "components": {
+          "!minecraft:use_remainder": {},
+          "minecraft:potion_contents": {
+            "potion": "minecraft:leaping"
+          }
+        }
+      }
+    }
+  ],
+  "inputs": [],
+  "exit_action": {
+    "label": "Exit",
+    "width": 40
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Confirm Class",
+      "width": 100,
+      "action": {
+        "type": "run_command",
+        "command": "trigger class add 1"
+      }
+    },
+    {
+      "label": "Back",
+      "width": 100,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "ctf:class"
+      }
+    }
+  ]
+}

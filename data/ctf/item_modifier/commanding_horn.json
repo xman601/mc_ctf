@@ -1,0 +1,44 @@
+{
+    "function": "minecraft:set_components",
+    "components": {
+        "minecraft:item_model": "minecraft:goat_horn",
+        "minecraft:item_name": "Commanding Horn",
+        "minecraft:lore": [
+            {
+                "text": "Use when your allies need a bit of a boost",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "minecraft:custom_data": {
+            "command": {
+                "run": "function ctf:ability/commanding_horn/use"
+            },
+            "mana_cost": {
+                "value": 8
+            },
+            "no_drop": true
+        },
+        "minecraft:use_cooldown": {
+            "seconds": 10
+        },
+        "minecraft:consumable": {
+            "consume_seconds": 0,
+            "animation": "none",
+            "sound": "intentionally_empty",
+            "has_consume_particles": false
+        },
+        "minecraft:use_remainder": {
+            "id": "minecraft:music_disc_chirp",
+            "components": {
+                "minecraft:item_model": "minecraft:goat_horn",
+                "minecraft:custom_data": {
+                    "replacement": {
+                        "modifier": "ctf:commanding_horn"
+                    }
+                }
+            }
+        },
+        "!minecraft:jukebox_playable": {}
+    }
+}

@@ -31,7 +31,7 @@
                         "items": "minecraft:trident",
                         "predicates": {
                             "minecraft:custom_data": {
-                                "CTF.Spear": true
+                                "spear": true
                             }
                         }
                     }

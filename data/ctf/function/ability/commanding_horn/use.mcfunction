@@ -7,7 +7,6 @@
 # ========================================================================
 
 playsound minecraft:item.goat_horn.sound.1 master @a ~ ~ ~
-function ctf:ability/commanding_horn/start_cooldown
 
 function ctf:ability/commanding_horn/check_team_for_boost {Team:white}
 function ctf:ability/commanding_horn/check_team_for_boost {Team:orange}

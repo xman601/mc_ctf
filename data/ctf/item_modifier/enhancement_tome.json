@@ -1,0 +1,47 @@
+{
+    "function": "minecraft:set_components",
+    "components": {
+        "minecraft:item_model": "minecraft:enchanted_book",
+        "minecraft:item_name": {
+            "text": "Tome of Enhancement",
+            "color": "yellow"
+        },
+        "minecraft:lore": [
+            {
+                "text": "Reading these pages somehow causes some good in the world",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "minecraft:custom_data": {
+            "command": {
+                "run": "function ctf:ability/enhancement_tome/use"
+            },
+            "mana_cost": {
+                "value": 8
+            },
+            "no_drop": true
+        },
+        "minecraft:use_cooldown": {
+            "seconds": 5
+        },
+        "minecraft:consumable": {
+            "consume_seconds": 0,
+            "animation": "none",
+            "sound": "intentionally_empty",
+            "has_consume_particles": false
+        },
+        "minecraft:use_remainder": {
+            "id": "minecraft:music_disc_far",
+            "components": {
+                "minecraft:item_model": "minecraft:enchanted_book",
+                "minecraft:custom_data": {
+                    "replacement": {
+                        "modifier": "ctf:enhancement_tome"
+                    }
+                }
+            }
+        },
+        "!minecraft:jukebox_playable": {}
+    }
+}

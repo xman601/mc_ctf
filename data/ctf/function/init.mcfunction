@@ -149,6 +149,7 @@ bossbar set ctf:black max 6
 scoreboard objectives add temp dummy
 scoreboard objectives add gid dummy
 scoreboard objectives add class dummy
+scoreboard objectives add mana dummy
 
 scoreboard players reset #next_class class
 function ctf:game/define_class {Class:swordsman}
@@ -164,25 +165,10 @@ scoreboard objectives add arrow.count dummy
 scoreboard objectives add wind_charge.cooldown dummy
 scoreboard objectives add wind_charge.count dummy
 scoreboard objectives add wind_charge.use minecraft.used:minecraft.wind_charge
-scoreboard objectives add infinity_bread.count dummy
-scoreboard objectives add fire_powder.cooldown dummy
-scoreboard objectives add fire_powder.count dummy
 scoreboard objectives add ender_pearl.use minecraft.used:minecraft.ender_pearl
 scoreboard objectives add ender_pearl.cooldown dummy
 scoreboard objectives add ender_pearl.count dummy
-scoreboard objectives add enhancement_tome.cooldown dummy
-scoreboard objectives add enhancement_tome.count dummy
-scoreboard objectives add diminishment_tome.cooldown dummy
-scoreboard objectives add diminishment_tome.count dummy
-scoreboard objectives add shadowstep.cooldown dummy
-scoreboard objectives add shadowstep.count dummy
-scoreboard objectives add shadowstep.active_time dummy
-scoreboard objectives add hunters_eye.cooldown dummy
-scoreboard objectives add hunters_eye.count dummy
-scoreboard objectives add levitation_wand.cooldown dummy
 scoreboard objectives add beast_tamer_wolf.live_time dummy
-scoreboard objectives add wolf_horn.cooldown dummy
-scoreboard objectives add commanding_horn.cooldown dummy
 scoreboard objectives add spear.thrown minecraft.used:minecraft.trident
 scoreboard objectives add bow.use minecraft.used:minecraft.bow
 scoreboard objectives add berserker_potion.cooldown dummy
@@ -217,3 +203,4 @@ scoreboard objectives add pickup_cooldown.black dummy
 
 # NOTE(alex): This checks all games for a win every second!
 schedule function ctf:game/list_iterate 1s replace
+schedule function ctf:game/regen_mana 1s replace

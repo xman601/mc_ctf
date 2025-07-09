@@ -1,0 +1,32 @@
+{
+    "function": "minecraft:set_components",
+    "components": {
+        "minecraft:consumable": {
+            "consume_seconds": 0,
+            "animation": "none",
+            "sound": "intentionally_empty",
+            "has_consume_particles": false
+        },
+        "minecraft:use_cooldown": {
+            "seconds": 3
+        },
+        "minecraft:use_remainder": {
+            "id": "minecraft:breeze_rod",
+            "components": {
+                "minecraft:custom_data": {
+                    "replacement": {
+                        "modifier": "itemfx:breeze_rod"
+                    }
+                }
+            }
+        },
+        "minecraft:custom_data": {
+            "command": {
+                "run": "particle minecraft:cloud ~ ~ ~ 0.1 0.1 0.1 0.2 100 force"
+            },
+            "mana_cost": {
+                "value": 5
+            }
+        }
+    }
+}

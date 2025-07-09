@@ -1,0 +1,18 @@
+{
+    "function": "minecraft:set_components",
+    "components": {
+        "minecraft:custom_data": {
+            "no_drop": true
+        },
+        "minecraft:use_remainder": {
+            "id": "minecraft:bread",
+            "components": {
+                "minecraft:custom_data": {
+                    "replacement": {
+                        "modifier": "ctf:infinity_bread"
+                    }
+                }
+            }
+        }
+    }
+}

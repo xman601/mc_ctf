@@ -21,7 +21,7 @@
                     "items": "minecraft:potion",
                     "predicates": {
                         "minecraft:custom_data": {
-                            "CTF.InvisibilityPotion": true
+                            "invisibility_vial": true
                         }
                     }
                 }

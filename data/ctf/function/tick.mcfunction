@@ -6,6 +6,9 @@
 # $Notice: (C) Copyright 2025 by Overgroup, Inc. All Rights Reserved. $
 # ========================================================================
 
+# NOTE(alex): Display the mana bar to all players
+execute as @a[gamemode=adventure] run function ctf:game/display_mana_bar
+
 # NOTE(alex): Look for any pending game starts
 execute if score .start_timer temp matches 1.. run function ctf:game/update_start_timer
 
@@ -17,15 +20,12 @@ execute as @e[type=wolf,tag=CTF.BeastTamerWolf,scores={beast_tamer_wolf.live_tim
 scoreboard players remove @e[type=wolf,tag=CTF.BeastTamerWolf,scores={beast_tamer_wolf.live_time=1..}] beast_tamer_wolf.live_time 1
 
 # NOTE(alex): Disallow dropping items
-execute as @e[type=item] if items entity @s contents *[minecraft:custom_data~{CTF.NoDrop:true}] at @s run function ctf:player/tp_item_to_owner
+execute as @e[type=item] if items entity @s contents *[minecraft:custom_data~{no_drop:true}] at @s run function ctf:player/tp_item_to_owner
 
 # NOTE(alex): Pickup and teleport flags
 execute as @e[type=sheep,tag=CTF.IsFlag] at @s run function ctf:game/update_flag
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s run function ctf:game/tp_carried_flags
 execute as @e[type=text_display,tag=CTF.IsCounter] at @s run function ctf:game/update_counter
-
-# NOTE(alex): Make sure arrows don't ever get picked up
-execute as @e[type=arrow,nbt=!{pickup:2b}] run data merge entity @s {pickup:2b}
 
 execute as @e[tag=CTF.ProtectionSphere] at @s run function ctf:ability/protection_sphere/tick
 

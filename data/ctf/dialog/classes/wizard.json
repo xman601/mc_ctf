@@ -14,8 +14,7 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:music_disc_pigstep",
-        "count": 3,
+        "id": "minecraft:music_disc_chirp",
         "components": {
           "!minecraft:jukebox_playable": {},
           "minecraft:item_model": "blaze_rod",

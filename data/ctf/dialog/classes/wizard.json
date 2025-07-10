@@ -18,9 +18,9 @@
         "count": 3,
         "components": {
           "!minecraft:jukebox_playable": {},
-          "minecraft:item_model": "blaze_powder",
+          "minecraft:item_model": "blaze_rod",
           "minecraft:item_name": {
-            "text": "Fire Powder"
+            "text": "Fire Wand"
           },
           "minecraft:rarity": "rare",
           "minecraft:lore": [
